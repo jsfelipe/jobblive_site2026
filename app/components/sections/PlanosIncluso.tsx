@@ -19,9 +19,9 @@ interface BenefitItem {
 const benefits: BenefitItem[] = [
   {
     icon: HardDrives,
-    title: "5GB de espaço para anexos",
+    title: "Espaço ilimitado para anexos",
     description:
-      "A conta da sua agência terá 5GB de espaço compartilhado para anexar briefings, peças e documentos em tarefas e projetos, com opção de contratação de espaço extra a qualquer momento.",
+      "A conta da sua agência conta com espaço ilimitado para anexar briefings, peças e documentos em tarefas e projetos, sem restrições ou cobranças adicionais.",
   },
   {
     icon: GraduationCap,
@@ -49,9 +49,9 @@ const benefits: BenefitItem[] = [
   },
   {
     icon: ShieldCheck,
-    title: "Infraestrutura Google Cloud & SSL",
+    title: "Infraestrutura AWS & SSL",
     description:
-      "Hospedagem de alta estabilidade e velocidade na nuvem do Google Cloud com certificação SSL de 256 bits, garantindo criptografia de ponta a ponta para seus dados.",
+      "Hospedagem de alta estabilidade e velocidade na nuvem da AWS (Amazon Web Services) com certificação SSL de 256 bits, garantindo criptografia de ponta a ponta para seus dados.",
   },
 ];
 
@@ -59,14 +59,14 @@ export default function PlanosIncluso() {
   return (
     <section className="w-full bg-secondary-50 py-16 md:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
-        
+
         {/* Cabeçalho do Bloco */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-medium text-foreground text-pretty">
-            Incluso em todos os planos
+            Vantagens incluídas em todos os planos
           </h2>
           <p className="mt-3 text-body-md text-foreground/70 font-sans text-pretty">
-            Tudo o que sua agência precisa para escalar a gestão com total segurança, estabilidade e suporte especializado.
+            Todos os recursos necessários para otimizar a gestão, aumentar a produtividade e impulsionar os resultados da sua agência.
           </p>
         </div>
 

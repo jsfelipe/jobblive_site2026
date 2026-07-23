@@ -5,7 +5,6 @@ import Footer from "../components/layout/Footer";
 import PageHeader from "../components/ui/PageHeader";
 import PlanosCards from "../components/sections/PlanosCards";
 import PlanosIncluso from "../components/sections/PlanosIncluso";
-import PlanosImplantacao from "../components/sections/PlanosImplantacao";
 import FaqAccordion from "../components/ui/FaqAccordion";
 import CTA from "../components/sections/CTA";
 import JsonLd from "../components/seo/JsonLd";
@@ -37,8 +36,8 @@ const faqItems = [
     question: "Na minha empresa, 5 pessoas irão utilizar o sistema. Qual seria o valor?",
     answerJsx: (
       <span>
-        Para uma agência com 5 usuários no plano mensal, o valor é de (5 x R$ 70,00) = R$ 350,00 ao mês.
-        No plano anual com 18% de desconto, o valor equivale a (5 x R$ 57,00) = R$ 285,00 ao mês.
+        Para uma agência com 5 usuários no Plano Enterprise mensal, o valor é de (5 x R$ 99,00) = R$ 495,00 ao mês.
+        No plano anual com 18% de desconto, o valor equivale a (5 x R$ 79,90) = R$ 399,50 ao mês.
         Você pode adicionar novos usuários à sua conta sempre que a equipe crescer.
       </span>
     ),
@@ -47,8 +46,7 @@ const faqItems = [
     question: "Qual é o espaço disponível para armazenar arquivos no sistema?",
     answerJsx: (
       <span>
-        Ao criar sua conta no Jobb Live, sua agência recebe 5GB de armazenamento grátis para anexos em tarefas e projetos,
-        compartilhados entre todos os usuários. Caso necessite de mais espaço, é possível contratar pacotes adicionais a qualquer momento.
+        O armazenamento é 100% ilimitado! Sua agência pode anexar briefings, arquivos, peças e documentos em tarefas e projetos à vontade, sem limites de espaço ou cobranças adicionais.
       </span>
     ),
   },
@@ -57,7 +55,7 @@ const faqItems = [
     answerJsx: (
       <span>
         O sistema conta com criptografia de ponta a ponta através de certificação SSL de 256 bits (a mesma tecnologia utilizada por bancos).
-        A infraestrutura é hospedada no Google Cloud e realizamos backups diários automáticos. Além disso, você pode gerar um backup navegável da sua conta quando desejar.
+        A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos. Além disso, você pode gerar um backup navegável da sua conta quando desejar.
       </span>
     ),
   },
@@ -93,7 +91,7 @@ const faqItems = [
 export default function PlanosPage() {
   const jsonLdData = {
     "@type": "FAQPage",
-    name: "Planos e Preços | Jobb Live",
+    name: "Planos e preços | Jobb Live",
     description: "Conheça os planos e preços das soluções em sistema de gestão Jobb Live.",
     mainEntity: faqItems.map((item) => ({
       "@type": "Question",
@@ -108,32 +106,29 @@ export default function PlanosPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-foreground">
       <Navbar />
-      
+
       <main className="flex-1 bg-white">
         {/* Injeção de Dados Estruturados (SEO + GEO) */}
         <JsonLd data={jsonLdData} />
 
         {/* Cabeçalho da Página */}
         <PageHeader
-          title="Planos e Preços"
+          title="Planos e preços"
           description="Escolha a opção ideal para transformar a gestão, a operação e o financeiro da sua agência."
         />
 
-        {/* Seção 1: Cards dos Planos (Anual x Mensal + Switch) */}
+        {/* Seção 1: Cards dos Planos (Mensal, Anual, Onboarding) */}
         <PlanosCards />
 
         {/* Seção 2: Incluso em Todos os Planos */}
         <PlanosIncluso />
-
-        {/* Seção 3: Implantação Orientada */}
-        <PlanosImplantacao />
 
         {/* Seção 4: FAQ (Perguntas Frequentes sobre Planos e Preços) */}
         <section className="w-full bg-white py-16 md:py-24">
           <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-display font-medium text-foreground text-pretty">
-                Principais dúvidas sobre os planos e preços Jobb Live
+                Dúvidas sobre os planos e preços
               </h2>
               <p className="mt-3 text-body-md text-foreground/70 font-sans text-pretty">
                 Tire suas dúvidas sobre contratação, pagamentos, licenças e segurança antes de começar.
