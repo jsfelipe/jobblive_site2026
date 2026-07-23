@@ -1,0 +1,11 @@
+{
+  "primaryColor": "#FD183F",
+  "secondaryColor": "#262626",
+  "foregroundColor": "#262626",
+  "backgroundColor": "#e6e6e6",
+  "titleFont": "Instrument Sans",
+  "bodyFont": "Instrument Sans",
+  "logoLight": "/assets/img/jobb-live-logotipo-light.svg",
+  "logoDark": "/assets/img/jobb-live-logotipo-dark.svg",
+  "favicon": "/icon.svg"
+}

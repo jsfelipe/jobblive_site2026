@@ -1,0 +1,455 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - link "WEBhouse Logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "WEBhouse Logo" [ref=e8]
+        - navigation [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "Sobre" [ref=e11] [cursor=pointer]:
+            - /url: /sobre
+          - link "Serviços" [ref=e12] [cursor=pointer]:
+            - /url: /#servicos
+          - link "Software" [ref=e13] [cursor=pointer]:
+            - /url: /software
+          - link "Portefólio" [ref=e14] [cursor=pointer]:
+            - /url: /portfolio
+          - link "Blog" [ref=e15] [cursor=pointer]:
+            - /url: /blog
+          - link "Contactos" [ref=e16] [cursor=pointer]:
+            - /url: /contactos
+        - generic [ref=e19] [cursor=pointer]:
+          - img "Brasil" [ref=e20]
+          - img [ref=e21]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "Agência de marketing digital especialista em performance e em escalar negócios." [level=1] [ref=e27]:
+            - text: Agência de marketing digital
+            - text: especialista em performance
+            - text: e em escalar negócios.
+          - paragraph [ref=e29]: Somos uma agência digital. Criamos sites, e-commerces, apps mobile e sistemas sob medida que aparecem no Google, atraem clientes, convertem leads e geram resultados.
+          - generic [ref=e31]:
+            - link "Quero marcar uma conversa" [ref=e32] [cursor=pointer]:
+              - /url: /contactos
+              - text: Quero marcar uma conversa
+              - img [ref=e33]
+            - link "Ver nossos projetos" [ref=e35] [cursor=pointer]:
+              - /url: /projetos
+              - text: Ver nossos projetos
+              - img [ref=e36]
+        - separator [ref=e38]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: "+120"
+            - generic [ref=e42]: projetos entregues
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img "Google Logo" [ref=e45]
+              - text: "4.9"
+            - generic [ref=e46]: avaliação no Google
+          - generic [ref=e47]:
+            - generic [ref=e48]: "+15"
+            - generic [ref=e49]: anos de mercado
+          - generic [ref=e50]:
+            - generic [ref=e51]: 99%
+            - generic [ref=e52]: de satisfação
+      - generic [ref=e55]:
+        - heading "Empresas que já aparecem no Google com a nossa ajuda." [level=2] [ref=e57]
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - img "ONVICTA" [ref=e62]
+            - img "GTS AUTO" [ref=e64]
+            - img "AQUARAMA" [ref=e66]
+            - img "Fórmula House" [ref=e68]
+            - img "Lagos" [ref=e70]
+            - generic:
+              - img "J'DIAS"
+            - generic:
+              - img "Ocean Sesimbra"
+          - generic [ref=e71]:
+            - img "ONVICTA" [ref=e73]
+            - img "GTS AUTO" [ref=e75]
+            - img "AQUARAMA" [ref=e77]
+            - img "Fórmula House" [ref=e79]
+            - img "Lagos" [ref=e81]
+            - generic:
+              - img "J'DIAS"
+            - generic:
+              - img "Ocean Sesimbra"
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - img [ref=e87]
+            - generic [ref=e89]: Sinal de alerta
+          - heading "Você se identifica com algum desses problemas?" [level=2] [ref=e90]
+        - generic [ref=e91]:
+          - generic [ref=e93]:
+            - img [ref=e95]
+            - generic [ref=e97]:
+              - heading "Meu site não aparece no Google, preciso de ajuda" [level=3] [ref=e98]
+              - paragraph [ref=e99]: Seus concorrentes aparecem na busca e você não. Você perde clientes antes mesmo de ter a chance de falar com eles.
+          - generic [ref=e101]:
+            - img [ref=e103]
+            - generic [ref=e105]:
+              - heading "Tenho site, mas não gero clientes por ele" [level=3] [ref=e106]
+              - paragraph [ref=e107]: As visitas existem, mas não viram contatos nem vendas. O site não comunica valor e as pessoas saem sem agir.
+          - generic [ref=e109]:
+            - img [ref=e111]
+            - generic [ref=e113]:
+              - heading "Vendo pelos marketplaces mas quero minha própria loja" [level=3] [ref=e114]
+              - paragraph [ref=e115]: Depender de marketplace ou redes sociais limita sua margem, seu controle e sua capacidade de escalar.
+          - generic [ref=e117]:
+            - img [ref=e119]
+            - generic [ref=e121]:
+              - heading "Meu processo depende de planilha ou processo manual" [level=3] [ref=e122]
+              - paragraph [ref=e123]: Você sabe que precisa de um sistema, mas não sabe por onde começar, podemos te ajudar, vamos conversar.
+        - generic [ref=e124]:
+          - img [ref=e125]
+          - generic [ref=e127]: Se você disse sim para algum desses problemas, temos a solução certa para você.
+          - link "Entre em contato" [ref=e128] [cursor=pointer]:
+            - /url: /contactos
+            - text: Entre em contato
+            - img [ref=e129]
+      - generic [ref=e132]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - img [ref=e136]
+            - generic [ref=e138]: Nossas soluções
+          - heading "O que fazemos e como cada solução pode crescer o seu negócio." [level=2] [ref=e139]
+          - paragraph [ref=e140]: Você pode contratar qualquer serviço separadamente ou combinar soluções para uma estratégia completa.
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - link "Gestão de Redes Sociais Gestão de Redes Sociais Presença estratégica nas redes e engajamento qualificado. VER MAIS" [ref=e144] [cursor=pointer]:
+                - /url: /servicos/gestoes-de-redes-sociais
+                - img "Gestão de Redes Sociais" [ref=e145]
+                - generic [ref=e147]:
+                  - generic [ref=e148]:
+                    - heading "Gestão de Redes Sociais" [level=3] [ref=e149]
+                    - paragraph [ref=e150]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e151]:
+                    - text: VER MAIS
+                    - img [ref=e152]
+              - link "Tráfego Pago Tráfego Pago Presença estratégica nas redes e engajamento qualificado. VER MAIS" [ref=e154] [cursor=pointer]:
+                - /url: /servicos/trafego-pago
+                - img "Tráfego Pago" [ref=e155]
+                - generic [ref=e157]:
+                  - generic [ref=e158]:
+                    - heading "Tráfego Pago" [level=3] [ref=e159]
+                    - paragraph [ref=e160]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e161]:
+                    - text: VER MAIS
+                    - img [ref=e162]
+              - link "Métricas e SEO Métricas e SEO Presença estratégica nas redes e engajamento qualificado. VER MAIS" [ref=e164] [cursor=pointer]:
+                - /url: /servicos/seo
+                - img "Métricas e SEO" [ref=e165]
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - heading "Métricas e SEO" [level=3] [ref=e169]
+                    - paragraph [ref=e170]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e171]:
+                    - text: VER MAIS
+                    - img [ref=e172]
+              - link "E-commerce e marketplace E-commerce e marketplace Sua loja vendendo on-line 24H por dia de forma automática. VER MAIS" [ref=e174] [cursor=pointer]:
+                - /url: /servicos/loja-online
+                - img "E-commerce e marketplace" [ref=e175]
+                - generic [ref=e177]:
+                  - generic [ref=e178]:
+                    - heading "E-commerce e marketplace" [level=3] [ref=e179]
+                    - paragraph [ref=e180]: Sua loja vendendo on-line 24H por dia de forma automática.
+                  - generic [ref=e181]:
+                    - text: VER MAIS
+                    - img [ref=e182]
+              - link "Sites institucionais e landing pages Sites institucionais e landing pages Sites focados em conversão, rápidos e com design exclusivo. VER MAIS" [ref=e184] [cursor=pointer]:
+                - /url: /servicos/criacao-de-sites
+                - img "Sites institucionais e landing pages" [ref=e185]
+                - generic [ref=e187]:
+                  - generic [ref=e188]:
+                    - heading "Sites institucionais e landing pages" [level=3] [ref=e189]
+                    - paragraph [ref=e190]: Sites focados em conversão, rápidos e com design exclusivo.
+                  - generic [ref=e191]:
+                    - text: VER MAIS
+                    - img [ref=e192]
+              - link "SMS Marketing SMS Marketing Alcance seus clientes onde eles estiverem com mensagens rápidas e diretas. VER MAIS" [ref=e194] [cursor=pointer]:
+                - /url: /servicos/sms-marketing
+                - img "SMS Marketing" [ref=e195]
+                - generic [ref=e197]:
+                  - generic [ref=e198]:
+                    - heading "SMS Marketing" [level=3] [ref=e199]
+                    - paragraph [ref=e200]: Alcance seus clientes onde eles estiverem com mensagens rápidas e diretas.
+                  - generic [ref=e201]:
+                    - text: VER MAIS
+                    - img [ref=e202]
+            - generic [ref=e204]:
+              - link [ref=e205] [cursor=pointer]:
+                - /url: /servicos/gestoes-de-redes-sociais
+                - img [ref=e206]
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - heading [level=3] [ref=e210]: Gestão de Redes Sociais
+                    - paragraph [ref=e211]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e212]:
+                    - text: VER MAIS
+                    - img [ref=e213]
+              - link [ref=e215] [cursor=pointer]:
+                - /url: /servicos/trafego-pago
+                - img [ref=e216]
+                - generic [ref=e218]:
+                  - generic [ref=e219]:
+                    - heading [level=3] [ref=e220]: Tráfego Pago
+                    - paragraph [ref=e221]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e222]:
+                    - text: VER MAIS
+                    - img [ref=e223]
+              - link [ref=e225] [cursor=pointer]:
+                - /url: /servicos/seo
+                - img [ref=e226]
+                - generic [ref=e228]:
+                  - generic [ref=e229]:
+                    - heading [level=3] [ref=e230]: Métricas e SEO
+                    - paragraph [ref=e231]: Presença estratégica nas redes e engajamento qualificado.
+                  - generic [ref=e232]:
+                    - text: VER MAIS
+                    - img [ref=e233]
+              - link [ref=e235] [cursor=pointer]:
+                - /url: /servicos/loja-online
+                - img [ref=e236]
+                - generic [ref=e238]:
+                  - generic [ref=e239]:
+                    - heading [level=3] [ref=e240]: E-commerce e marketplace
+                    - paragraph [ref=e241]: Sua loja vendendo on-line 24H por dia de forma automática.
+                  - generic [ref=e242]:
+                    - text: VER MAIS
+                    - img [ref=e243]
+              - link [ref=e245] [cursor=pointer]:
+                - /url: /servicos/criacao-de-sites
+                - img [ref=e246]
+                - generic [ref=e248]:
+                  - generic [ref=e249]:
+                    - heading [level=3] [ref=e250]: Sites institucionais e landing pages
+                    - paragraph [ref=e251]: Sites focados em conversão, rápidos e com design exclusivo.
+                  - generic [ref=e252]:
+                    - text: VER MAIS
+                    - img [ref=e253]
+              - link [ref=e255] [cursor=pointer]:
+                - /url: /servicos/sms-marketing
+                - img [ref=e256]
+                - generic [ref=e258]:
+                  - generic [ref=e259]:
+                    - heading [level=3] [ref=e260]: SMS Marketing
+                    - paragraph [ref=e261]: Alcance seus clientes onde eles estiverem com mensagens rápidas e diretas.
+                  - generic [ref=e262]:
+                    - text: VER MAIS
+                    - img [ref=e263]
+          - generic:
+            - button "Anterior" [ref=e265] [cursor=pointer]:
+              - img [ref=e266]
+            - button "Próximo" [ref=e268] [cursor=pointer]:
+              - img [ref=e269]
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - img [ref=e278]
+                - generic [ref=e280]: Como fazemos
+              - heading "Construímos produtos digitais com estratégia para performar e escalar negócios de verdade." [level=2] [ref=e282]
+            - link "Fale conosco sobre o seu projeto" [ref=e284] [cursor=pointer]:
+              - /url: /contactos
+              - text: Fale conosco sobre o seu projeto
+              - img [ref=e285]
+          - generic [ref=e287]:
+            - generic [ref=e288]:
+              - img [ref=e289]
+              - heading "FOCO EM RESULTADO" [level=3] [ref=e291]
+              - paragraph [ref=e292]: Desde o início procuramos entender seu mercado, seu cliente e seu objetivo. Resultado tem que ser pensado do início ao fim. E pós entrega o trabalho continua...
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - heading "PARCEIRO DE LONGO PRAZO" [level=3] [ref=e296]
+              - paragraph [ref=e297]: Não sumimos após a entrega. Estamos aqui para corrigir, evoluir e acompanhar cada fase do seu crescimento.
+            - generic [ref=e298]:
+              - img [ref=e299]
+              - heading "Comunicação direta" [level=3] [ref=e301]
+              - paragraph [ref=e302]: Nosso atendimento acompanha todas as fases do projeto, eliminando ruídos e agilizando decisões.
+            - generic [ref=e303]:
+              - img [ref=e304]
+              - heading "Transparência total" [level=3] [ref=e306]
+              - paragraph [ref=e307]: Você sabe o que está pagando e por quê, você acompanha todas as etapas do projeto, de ponta a ponta. Sem surpresas negativas.
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - img [ref=e311]
+              - generic [ref=e313]: Nosso processo
+            - heading "Conheça nosso workflow" [level=3] [ref=e314]
+          - generic [ref=e315]:
+            - generic [ref=e316]:
+              - generic [ref=e317]:
+                - heading "DISCOVERY" [level=4] [ref=e318]
+                - heading "Descobrindo as necessidades" [level=5] [ref=e319]
+              - paragraph [ref=e320]:
+                - generic [ref=e321]: Mergulhamos profundamente no seu negócio para entender contexto, objetivos e oportunidades. A partir de uma análise estratégica, transformamos informações em direcionamento claro, garantindo que cada decisão futura seja guiada por propósito, não por suposições.
+            - generic [ref=e322]:
+              - generic [ref=e323]:
+                - heading "DELIVERY" [level=4] [ref=e324]
+                - heading "Entregando as soluções" [level=5] [ref=e325]
+              - paragraph [ref=e326]:
+                - generic [ref=e327]: Materializamos a estratégia em experiências digitais de alto nível. Unimos design, tecnologia e performance para construir soluções que não apenas funcionam, mas elevam a percepção da sua marca e entregam resultados concretos.
+            - generic [ref=e328]:
+              - generic [ref=e329]:
+                - heading "GROWTH" [level=4] [ref=e330]
+                - heading "Evoluindo continuamente" [level=5] [ref=e331]
+              - paragraph [ref=e332]:
+                - generic [ref=e333]: Evoluímos continuamente com base em dados e comportamento real do usuário. Otimizamos, testamos e aprimoramos cada detalhe para garantir que o produto acompanhe o crescimento do seu negócio e gere valor no longo prazo.
+      - generic [ref=e336]:
+        - heading "Portefólio" [level=2] [ref=e337]
+        - paragraph [ref=e338]: Estamos com vagas abertas em nosso portefólio para o seu projeto, entre em contato e vamos conversar!
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - img "Elite" [ref=e343]
+              - generic [ref=e345]:
+                - heading "Elite" [level=4] [ref=e346]
+                - paragraph [ref=e347]: Consultoria em gerenciamento
+                - generic [ref=e349]:
+                  - text: Ver projeto
+                  - img [ref=e350]
+            - generic [ref=e352]:
+              - img "J Dias" [ref=e353]
+              - generic [ref=e355]:
+                - heading "J Dias" [level=4] [ref=e356]
+                - paragraph [ref=e357]: Cozinhas planejadas
+                - generic [ref=e359]:
+                  - text: Ver projeto
+                  - img [ref=e360]
+            - generic [ref=e362]:
+              - img "Watch Magazine" [ref=e363]
+              - generic [ref=e365]:
+                - heading "Watch Magazine" [level=4] [ref=e366]
+                - paragraph [ref=e367]: E-commerce de luxo
+                - generic [ref=e369]:
+                  - text: Ver projeto
+                  - img [ref=e370]
+            - generic [ref=e372]:
+              - img "XNParts" [ref=e373]
+              - generic [ref=e375]:
+                - heading "XNParts" [level=4] [ref=e376]
+                - paragraph [ref=e377]: Peças automotivas
+                - generic [ref=e379]:
+                  - text: Ver projeto
+                  - img [ref=e380]
+          - generic [ref=e382]:
+            - generic [ref=e383]:
+              - img "Elite" [ref=e384]
+              - generic [ref=e386]:
+                - heading "Elite" [level=4] [ref=e387]
+                - paragraph [ref=e388]: Consultoria em gerenciamento
+                - generic [ref=e390]:
+                  - text: Ver projeto
+                  - img [ref=e391]
+            - generic [ref=e393]:
+              - img "J Dias" [ref=e394]
+              - generic [ref=e396]:
+                - heading "J Dias" [level=4] [ref=e397]
+                - paragraph [ref=e398]: Cozinhas planejadas
+                - generic [ref=e400]:
+                  - text: Ver projeto
+                  - img [ref=e401]
+            - generic [ref=e403]:
+              - img "Watch Magazine" [ref=e404]
+              - generic [ref=e406]:
+                - heading "Watch Magazine" [level=4] [ref=e407]
+                - paragraph [ref=e408]: E-commerce de luxo
+                - generic [ref=e410]:
+                  - text: Ver projeto
+                  - img [ref=e411]
+            - generic [ref=e413]:
+              - img "XNParts" [ref=e414]
+              - generic [ref=e416]:
+                - heading "XNParts" [level=4] [ref=e417]
+                - paragraph [ref=e418]: Peças automotivas
+                - generic [ref=e420]:
+                  - text: Ver projeto
+                  - img [ref=e421]
+        - link "Todos os projetos" [ref=e424] [cursor=pointer]:
+          - /url: /portefolio
+          - text: Todos os projetos
+          - img [ref=e425]
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - generic [ref=e431]:
+            - img [ref=e432]
+            - generic [ref=e434]: Estamos esperando seu contato
+          - generic [ref=e435]:
+            - heading "Seu site está ajudando ou travando seu crescimento?" [level=2] [ref=e436]
+            - paragraph [ref=e437]: Se você quer mais do que presença digital, está no lugar certo.
+        - link "Quero escalar meu negócio" [ref=e439] [cursor=pointer]:
+          - /url: /contactos
+          - text: Quero escalar meu negócio
+          - img [ref=e440]
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - link "Webhouse Agência Digital" [ref=e447] [cursor=pointer]:
+          - /url: /
+          - img "Webhouse Agência Digital" [ref=e448]
+        - generic [ref=e449]:
+          - heading "Páginas" [level=4] [ref=e450]
+          - generic [ref=e451]:
+            - link "Home" [ref=e452] [cursor=pointer]:
+              - /url: /
+            - link "Portefólio" [ref=e453] [cursor=pointer]:
+              - /url: /portfolio
+            - link "Sobre" [ref=e454] [cursor=pointer]:
+              - /url: /sobre
+            - link "Blog" [ref=e455] [cursor=pointer]:
+              - /url: /blog
+            - link "Serviços" [ref=e456] [cursor=pointer]:
+              - /url: /servicos
+            - link "Contacto" [ref=e457] [cursor=pointer]:
+              - /url: /contactos
+        - generic [ref=e458]:
+          - heading "Software" [level=4] [ref=e459]
+          - generic [ref=e460]:
+            - link "mystand.pt" [ref=e461] [cursor=pointer]:
+              - /url: "#"
+            - link "mypart.pt" [ref=e462] [cursor=pointer]:
+              - /url: "#"
+            - link "mytelecom.pt" [ref=e463] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e464]:
+          - heading "Social" [level=4] [ref=e465]
+          - generic [ref=e466]:
+            - link "Instagram" [ref=e467] [cursor=pointer]:
+              - /url: https://www.instagram.com/webhouse.pt?utm_source=qr
+            - link "Linkedin" [ref=e468] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/webhouse-pt/posts/?feedView=all
+            - link "Youtube" [ref=e469] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=s-qf4XG4K3k&t=110s
+        - generic [ref=e470]:
+          - heading "Contacto" [level=4] [ref=e471]
+          - generic [ref=e472]:
+            - link "fale@webhouse.pt" [ref=e473] [cursor=pointer]:
+              - /url: mailto:fale@webhouse.pt
+            - link "PT +351 900 000 000" [ref=e474] [cursor=pointer]:
+              - /url: tel:+351900000000
+            - link "BR +55 11 0000 0000" [ref=e475] [cursor=pointer]:
+              - /url: tel:+551100000000
+      - generic [ref=e477]:
+        - paragraph [ref=e478]: 2026 Webhouse.Pt - Todos Os Direitos Reservados.
+        - generic [ref=e479]:
+          - link "Política Privacidade" [ref=e480] [cursor=pointer]:
+            - /url: /privacidade
+          - generic [ref=e481]: "|"
+          - link "Resolução De Conflitos" [ref=e482] [cursor=pointer]:
+            - /url: /conflitos
+          - generic [ref=e483]: "|"
+          - link "Uso De Cookies" [ref=e484] [cursor=pointer]:
+            - /url: /cookies
+          - generic [ref=e485]: "|"
+          - link "Livro Reclamações" [ref=e486] [cursor=pointer]:
+            - /url: /reclamacoes
+          - button "Voltar ao topo" [ref=e487] [cursor=pointer]:
+            - img [ref=e489]
+  - button "Open Next.js Dev Tools" [ref=e496] [cursor=pointer]:
+    - img [ref=e497]

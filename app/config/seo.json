@@ -1,0 +1,106 @@
+{
+  "/": {
+    "title": "Home - Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Software de gestao para agencias de marketing. Gerencie projetos, financeiro e operacao em um unico sistema, sem planilhas, sem retrabalho.",
+    "keywords": [
+      "software de gestao para agencias",
+      "gestao de agencias de marketing",
+      "jobb live"
+    ]
+  },
+  "/duvidas": {
+    "title": "Duvidas Frequentes | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Encontre respostas para as principais duvidas sobre o Jobb Live: funcionalidades, emissao de nota fiscal, seguranca de dados, suporte e mais.",
+    "keywords": [
+      "duvidas jobb live",
+      "suporte jobb live",
+      "perguntas frequentes",
+      "faq jobb live",
+      "como funciona jobb live"
+    ]
+  },
+  "/funcionalidades": {
+    "title": "Funcionalidades | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Conheca os recursos do Jobb Live para centralizar projetos, orcamentos, tarefas, financeiro, notas fiscais e rentabilidade da sua agencia.",
+    "keywords": [
+      "funcionalidades jobb live",
+      "software para agencias",
+      "gestao de projetos",
+      "gestao financeira para agencias"
+    ]
+  },
+  "/planos": {
+    "title": "Planos e Preços | Jobb Live - Software de gestão para agências",
+    "description": "Conheça os planos e preços das soluções em sistema de gestão Jobb Live. Sistemas de gestão de projetos, tarefas e financeiro para agências e produtoras. Teste grátis!",
+    "keywords": [
+      "planos jobb live",
+      "preços jobb live",
+      "software de gestão para agências",
+      "sistema de gestão de projetos",
+      "sistema para agência de marketing"
+    ]
+  },
+  "/politica-de-privacidade": {
+    "title": "Política de Privacidade | Jobb Live - Software de gestão para agencias de marketing.",
+    "description": "Leia a Política de Privacidade do Jobb Live. Saiba como coletamos, usamos, armazenamos e protegemos seus dados pessoais de acordo com a LGPD.",
+    "keywords": [
+      "politica de privacidade",
+      "jobb live",
+      "lgpd",
+      "protecao de dados",
+      "privacidade"
+    ]
+  },
+  "/segmentos/[slug]": {
+    "title": "Segmentos atendidos | Jobb Live - Software de gestão para agencias e eventos.",
+    "description": "Veja como o Jobb Live atende diferentes tipos de agências, produtoras e organizadores de eventos com gestão integrada.",
+    "keywords": [
+      "software para agencias",
+      "software para eventos",
+      "gestao para produtoras"
+    ]
+  },
+  "/sobre": {
+    "title": "Sobre | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Conheca a Jobb Live, plataforma de gestao criada para dar mais clareza, controle e performance a agencias e produtoras.",
+    "keywords": [
+      "sobre jobb live",
+      "gestao para agencias",
+      "software para produtoras"
+    ]
+  },
+  "/termos-de-uso": {
+    "title": "Termos de Uso | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Leia os Termos de Uso do Jobb Live. Entenda os termos e condicoes para licenciamento e uso do nosso software de gestao de agencias.",
+    "keywords": [
+      "termos de uso",
+      "contrato de licenca",
+      "jobb live",
+      "termos de servico"
+    ]
+  },
+  "/teste-gratis": {
+    "title": "Teste Grátis | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Experimente o Jobb Live grátis por 7 dias. O software completo de gestao para agencias de marketing, live marketing, publicidade e eventos.",
+    "keywords": [
+      "teste grátis",
+      "jobb live",
+      "sistema de gestao para agencias",
+      "teste grátis software agencia"
+    ]
+  },
+  "/teste-gratis/sucesso": {
+    "title": "Solicitacao Enviada | Jobb Live - Software de gestao para agencias de marketing.",
+    "description": "Seus dados foram recebidos com sucesso. Em breve voce recebera as instrucoes para o seu periodo de testes por e-mail.",
+    "keywords": []
+  },
+  "/links": {
+    "title": "Links Oficiais | Jobb Live",
+    "description": "Acesse os canais oficiais da Jobb Live, fale pelo WhatsApp, envie e-mail ou visite o site principal.",
+    "keywords": [
+      "links jobb live",
+      "contato jobb live",
+      "whatsapp jobb live"
+    ]
+  }
+}
