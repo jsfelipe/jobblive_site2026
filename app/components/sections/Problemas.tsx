@@ -20,10 +20,10 @@ export default function Problemas() {
   const boxRef = useRef<HTMLDivElement>(null);
 
   const problemsList = [
-    "Projetos sem controle de custo",
-    "Orçamentos que não refletem a realidade",
-    "Financeiro descentralizado",
-    "Falta de visibilidade do lucro"
+    "Campanhas sem visão unificada",
+    "Orçamentos desconectados da execução",
+    "Tarefas e prazos fora do job",
+    "Custos de fornecedores que não chegam ao financeiro"
   ];
 
   useEffect(() => {

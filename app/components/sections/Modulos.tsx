@@ -76,32 +76,31 @@ export default function Modulos() {
   }, []);
 
   const projectManagementFeatures = [
-    "1. Detalhes da Campanha",
-    "5. Relatórios e Gráficos de Orçamento",
-    "2. Orçamento Detalhado",
-    "6. Quadro (Kanban)",
-    "3. Cálculo do Orçamento",
-    "7. Gantt",
-    "4. Aprovar Pagamento com BV",
-    "8. Lista de Tarefas"
+    "Detalhes da Campanha",
+    "Orçamento detalhado e cálculo",
+    "Aprovar pagamento de fornecedores",
+    "Relatórios de orçamento",
+    "Quadro Kanban",
+    "Gantt",
+    "Lista de tarefas",
   ];
 
   const proposalsFeatures = [
     "Envio de proposta via link",
     "Envio de propostas em PDF",
-    "Envio de propostas em PDF"
+    "Assinatura digital (D4Sign e DocuSign)",
   ];
 
   const financialFeatures = [
-    "Controle de entradas e saídas",
-    "Conciliação bancária",
-    "Emissão de notas fiscais"
+    "Custos do orçamento no financeiro",
+    "Pagamentos e pedidos de produção (PP)",
+    "Conciliação bancária e NF-e",
   ];
 
   const reportFeatures = [
     "Relatórios financeiros",
     "Lucro por projeto",
-    "Performance da agência"
+    "Performance da agência",
   ];
 
   return (
@@ -139,10 +138,10 @@ export default function Modulos() {
             {/* Esquerda: Detalhes do Módulo */}
             <div className="lg:col-span-5 flex flex-col justify-center">
               <h3 className="text-heading-3 md:text-heading-2 font-display text-white mb-4 tracking-tight text-pretty">
-                Gestão de projetos
+                Campanha, orçamento e tarefas
               </h3>
               <p className="text-lg text-white/80 leading-relaxed text-pretty">
-                Todas as informações reunidas, chega de pagar caro por sistemas complexos e com funções que você nunca usa.
+                Tudo do job em um painel: briefing, orçamento, cronograma e acompanhamento — sem planilhas soltas.
               </p>
             </div>
 

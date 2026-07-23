@@ -72,7 +72,7 @@ export default function Footer() {
           {/* Direita: Segurança e Hospedagem */}
           <div className="flex flex-col items-center md:items-end gap-4 w-full md:w-auto">
             <p className="text-body-md text-foreground/50 text-center md:text-right text-pretty max-w-[200px] leading-relaxed">
-              Estamos hospedados na aws e protegidos pela LGPD.
+              Estamos hospedados na AWS e em conformidade com a LGPD.
             </p>
             <div className="flex items-center justify-center md:justify-end gap-3">
               {/* AWS */}
@@ -87,7 +87,7 @@ export default function Footer() {
               {/* LGPD */}
               <Image
                 src="/assets/img/lgpd.svg"
-                alt="Protegido pela LGPD"
+                alt="Em conformidade com a LGPD"
                 width={64}
                 height={28}
                 className="h-7 w-auto object-contain"

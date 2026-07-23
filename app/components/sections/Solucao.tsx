@@ -15,36 +15,36 @@ export default function Solucao() {
   const steps = [
     {
       id: "01",
-      title: "Inicie o projeto",
-      description: "Preencha todos os dados do cliente.",
+      title: "Abra a campanha",
+      description: "Cliente, briefing, objetivos e prazos do job num só lugar.",
       icon: <FileText className="w-6 h-6" />,
       margin: "md:mt-[160px]",
     },
     {
       id: "02",
       title: "Monte o orçamento",
-      description: "Utilize modelos prontos ou crie o seu próprio modelo.",
+      description: "Modelos de agência, markups e custos de fornecedores.",
       icon: <ClipboardText className="w-6 h-6" />,
       margin: "md:mt-[120px]",
     },
     {
       id: "03",
-      title: "Executar tarefas",
-      description: "Crie equipes e tarefas e gerencie através de um painel intuitivo.",
+      title: "Execute as tarefas",
+      description: "Kanban, Gantt e listas com responsáveis e prazos.",
       icon: <Wrench className="w-6 h-6" />,
       margin: "md:mt-[80px]",
     },
     {
       id: "04",
-      title: "Gerir o financeiro",
-      description: "Custos dos eventos, conciliação bancária e fluxo de caixa",
+      title: "Aprove e pague",
+      description: "Custos do orçamento viram contas a pagar e pedidos de produção.",
       icon: <TrendUp className="w-6 h-6" />,
       margin: "md:mt-[40px]",
     },
     {
       id: "05",
-      title: "Relatório financeiro",
-      description: "Analise o previsto vs realizado, demonstrativo de DRE.",
+      title: "Veja o resultado",
+      description: "Previsto vs realizado e lucro por campanha.",
       icon: <CurrencyDollar className="w-6 h-6" />,
       margin: "md:mt-0",
     },
@@ -133,7 +133,7 @@ export default function Solucao() {
             Tudo conectado. <span className="text-primary-500">Finalmente.</span>
           </h2>
           <p className="text-lg text-foreground/70 text-pretty mb-8">
-            Com a JobbLive, você conecta orçamento, execução e <br className="hidden md:block" /> financeiro in um único fluxo.
+            Com o JobbLive, você conecta campanha, orçamento, tarefas e <br className="hidden md:block" /> financeiro em um único fluxo.
           </p>
           <p className="text-primary-500 text-body-md font-semibold tracking-wide uppercase hover:opacity-80 transition-opacity">
             Como funciona?
@@ -172,7 +172,7 @@ export default function Solucao() {
 
         {/* Texto Extra Inferior Direito */}
         <div className="solucao-footer opacity-0 mt-12 md:mt-16 flex justify-end items-center gap-1 text-foreground/60 text-body-md">
-          <span>E tenha muuuuuito + controle do seu workflow.</span>
+          <span>Mais controle do fluxo da agência — do briefing ao caixa.</span>
           <ArrowUpRight className="w-5 h-5 text-primary-500" />
           <ArrowUpRight className="w-5 h-5 text-primary-500" />
           <ArrowUpRight className="w-5 h-5 text-primary-500" />

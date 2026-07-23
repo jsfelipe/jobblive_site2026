@@ -45,9 +45,9 @@ export default function TesteGratisPage() {
 
                 {/* Título de impacto */}
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-3xl md:text-4xl text-white tracking-tightest leading-tight text-pretty font-display font-normal">
+                  <h1 className="text-3xl md:text-4xl text-white tracking-tightest leading-tight text-pretty font-display font-normal">
                     Vamos começar seu período de testes!
-                  </h2>
+                  </h1>
                   <p className="text-white/70 text-body-md text-pretty">
                     Aproveite 7 dias grátis para conhecer o software de gestão que vai transformar a rotina da sua agência ou produtora.
                   </p>

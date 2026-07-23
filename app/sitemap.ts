@@ -33,10 +33,14 @@ function getStaticRoutes(dir: string, baseRoute = ""): string[] {
   return routes;
 }
 
+const SITEMAP_EXCLUDED = new Set(["/teste-gratis/sucesso"]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
   const appDirectory = path.join(process.cwd(), "app");
-  const staticPaths = getStaticRoutes(appDirectory);
+  const staticPaths = getStaticRoutes(appDirectory).filter(
+    (routePath) => !SITEMAP_EXCLUDED.has(routePath)
+  );
 
   const routes = staticPaths.map((routePath) => ({
     url: `${baseUrl}${routePath === "/" ? "" : routePath}`,

@@ -4,6 +4,7 @@ import Hero from "./components/sections/Hero";
 import Problemas from "./components/sections/Problemas";
 import Solucao from "./components/sections/Solucao";
 import GestaoAgil from "./components/sections/GestaoAgil";
+import FinanceiroCompleto from "./components/sections/FinanceiroCompleto";
 import Modulos from "./components/sections/Modulos";
 import Indicado from "./components/sections/Indicado";
 import Depoimentos from "./components/sections/Depoimentos";
@@ -30,6 +31,9 @@ export default function Home() {
 
         {/* Seção Gestão Ágil */}
         <GestaoAgil />
+
+        {/* Seção Financeiro Completo */}
+        <FinanceiroCompleto />
         
         {/* Seção Módulos */}
         <Modulos />

@@ -7,6 +7,7 @@ import themeData from "./config/theme.json";
 import SmoothScroll from "./components/ui/SmoothScroll";
 import WhatsAppButton from "./components/ui/WhatsAppButton";
 import ScrollAnimateInitializer from "./components/ui/ScrollAnimateInitializer";
+import SiteJsonLd from "./components/seo/SiteJsonLd";
 import "./globals.css";
 
 // Obtém a URL base do site a partir do .env para configurar o metadataBase do Next.js
@@ -83,6 +84,7 @@ export default function RootLayout({
         <link href={googleFontsUrl} rel="stylesheet" />
       </head>
       <body className="antialiased min-h-full flex flex-col" suppressHydrationWarning>
+        <SiteJsonLd />
         <Suspense fallback={null}>
           <Analytics />
         </Suspense>

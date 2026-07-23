@@ -91,8 +91,7 @@ export default function Hero() {
 
         {/* Subtítulo / Descrição */}
         <p className="hero-subtitle opacity-0 text-lg text-foreground/70 max-w-2xl text-pretty mb-10">
-          Gerencie projetos, financeiro e operação em um único sistema,
-          sem planilhas, sem retrabalho.
+          Gerencie campanhas, orçamentos, tarefas e financeiro em um único sistema — sem planilhas, sem retrabalho.
         </p>
 
         {/* Botões de Ação */}

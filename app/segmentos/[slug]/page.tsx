@@ -8,7 +8,13 @@ import SegmentHero from "../../components/ui/SegmentHero";
 import { segmentosData } from "../../config/segmentos";
 import JsonLd from "../../components/seo/JsonLd";
 import contactsData from "../../config/contacts.json";
-import { absoluteUrl, DEFAULT_OG_IMAGE_PATH, getSiteUrl } from "../../lib/site";
+import {
+  absoluteUrl,
+  DEFAULT_OG_IMAGE_HEIGHT,
+  DEFAULT_OG_IMAGE_PATH,
+  DEFAULT_OG_IMAGE_WIDTH,
+  getSiteUrl,
+} from "../../lib/site";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -50,8 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: imageUrl,
-          width: 1200,
-          height: 630,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
           alt: data.metaTitle,
         }
       ]

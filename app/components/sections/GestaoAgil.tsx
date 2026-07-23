@@ -23,41 +23,41 @@ interface StorytellingItem {
 const storytellingItems: StorytellingItem[] = [
   {
     id: 0,
-    label: "Conciliação bancária inteligente por arquivo Ofx",
-    title: "Conciliação bancária inteligente por arquivo Ofx",
-    description: "Tenha praticidade e economize tempo com nossa solução de conciliação bancária. Simplificamos o processo para que você gerencie suas finanças com facilidade, reduzindo tarefas manuais e ganhando mais eficiência diariamente.",
-    image: "/assets/img/conciliacao-bancaria.jpg",
-    icons: ["/assets/icons/icon-ofx.svg"]
-  },
-  {
-    id: 1,
-    label: "Emissão de nota fiscal eletrônica",
-    title: "Emissão de nota fiscal eletrônica",
-    description: "A emissão de nota fiscal eletrônica integrada ao sistema financeiro traz mais agilidade e eficiência operacional. Automatize processos, elimine digitações manuais e garanta mais segurança nas transações comerciais diariamente.",
-    image: "/assets/img/notas-fiscais.jpg",
-    icons: ["/assets/icons/icon-nfs-e.svg"]
-  },
-  {
-    id: 2,
-    label: "Envio de cadastro de fornecedores por link",
-    title: "Envio de cadastro de fornecedores por link",
-    description: "Agora seu fornecedor pode atualizar os próprios dados com facilidade e rapidez diretamente pelo sistema. Todas as informações ficam salvas automaticamente em apenas um clique, reduzindo erros operacionais internos.",
-    image: "/assets/img/fornecedores-link.jpg",
+    label: "Campanhas com visão 360°",
+    title: "Campanhas com visão 360°",
+    description: "Briefing, orçamentos, tarefas, pedidos de produção e financeiro no mesmo job. Sua equipe enxerga o projeto inteiro sem trocar de planilha.",
+    image: "/assets/img/bg-modulos.png",
     icons: ["/assets/icons/icon-link.svg"]
   },
   {
-    id: 3,
-    label: "Geração de contrato em PDF",
-    title: "Geração de contrato em PDF",
-    description: "Crie contratos em PDF e tenha flexibilidade para cadastrar diferentes modelos diretamente em nosso sistema. Personalize, organize e envie contratos para clientes ou fornecedores com mais praticidade diariamente.",
+    id: 1,
+    label: "Orçamentos pensados para agência",
+    title: "Orçamentos pensados para agência",
+    description: "Modelos prontos, cálculo com markup e custos de fornecedores. Monte a proposta, envie ao cliente e acompanhe do orçado ao executado.",
     image: "/assets/img/contratos-pdf.jpg",
     icons: ["/assets/icons/icon-pdf.svg"]
   },
   {
+    id: 2,
+    label: "Tarefas e cronograma",
+    title: "Tarefas e cronograma ligados à campanha",
+    description: "Organize a entrega em Kanban, Gantt e listas com responsáveis e prazos. Tudo conectado ao job — sem tarefas soltas fora do contexto.",
+    image: "/assets/img/bg-conectado.png",
+    icons: ["/assets/icons/icon-link.svg"]
+  },
+  {
+    id: 3,
+    label: "Cadastro de fornecedores por link",
+    title: "Cadastro de fornecedores por link",
+    description: "Envie um link e o fornecedor preenche os próprios dados. Menos retrabalho interno, cadastro completo e pronto para o orçamento e o financeiro.",
+    image: "/assets/img/fornecedores-link.jpg",
+    icons: ["/assets/icons/icon-link.svg"]
+  },
+  {
     id: 4,
-    label: "Integração com a D4sign e Docusign",
-    title: "Integração com a D4sign e Docusign. Tenha a praticidade da assinatura digital.",
-    description: "Além de gerar contratos em PDF de maneira prática e automatizada, agora você também pode enviá-los online. Permita que clientes e fornecedores assinem documentos digitalmente com rapidez, segurança e praticidade.",
+    label: "Propostas e assinatura digital",
+    title: "Propostas e assinatura digital",
+    description: "Gere contratos em PDF e envie para assinatura com D4Sign ou DocuSign. Do orçamento à assinatura do cliente, no mesmo fluxo da agência.",
     image: "/assets/img/integracao-d4sign-docusign.jpg",
     icons: ["/assets/icons/icon-d4sign.svg", "/assets/icons/icon-docusign.svg"]
   }
@@ -217,14 +217,14 @@ export default function GestaoAgil() {
             {/* Lado Esquerdo: Textos do Cabeçalho e Lista de Facilidades */}
             <div className="gestao-texts-container lg:col-span-7 flex flex-col justify-center">
               <span className="gestao-tag opacity-0 text-overline text-primary-500 font-normal tracking-widest uppercase mb-4 text-pretty">
-                Gestão Ágil Integrada
+                Operação de agência
               </span>
               <h2 className="gestao-title opacity-0 text-pretty leading-tight tracking-tightest mb-6 font-display text-foreground text-3xl md:text-5xl">
                 Agilize os processos com o JobbLive <br />
                 e <span className="text-primary-500">economize horas de trabalho.</span>
               </h2>
               <p className="gestao-text opacity-0 text-body-lg text-foreground/70 text-pretty mb-8">
-                Conheça algumas das facilidades que o JobbLive oferece ao seu dia a dia.
+                Facilidades pensadas para o dia a dia da agência — do job à entrega.
               </p>
 
               {/* Lista Interativa */}
