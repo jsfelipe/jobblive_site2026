@@ -51,7 +51,7 @@ export default function Hero() {
 
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 0.6 } });
-    
+
     tl.fromTo(".hero-badge", { scale: 0.95, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4 })
       .fromTo(".hero-title", { y: 20, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.25")
       .fromTo(".hero-subtitle", { y: 15, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.3")
@@ -78,9 +78,28 @@ export default function Hero() {
 
       <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
 
-        {/* Badge / Tag Superior */}
-        <div className="hero-badge opacity-0 inline-flex items-center rounded-full border border-white px-4 py-1.5 text-xs text-white mb-6">
-          Agências <span className="mx-2 opacity-50">|</span> Marketing <span className="mx-2 opacity-50">|</span> Eventos
+        {/* Badge / Tag Superior com Gradiente Animado no Texto, Barras e Borda */}
+        <div className="hero-badge opacity-0 group relative inline-flex items-center justify-center rounded-full px-4 py-1.5 text-xs md:text-sm font-medium mb-6 bg-transparent select-none">
+          {/* Borda Animada */}
+          <span
+            className="animate-gradient absolute inset-0 block h-full w-full rounded-[inherit] bg-gradient-to-r from-primary-400 via-primary-200 to-primary-400 bg-[length:300%_100%] p-[1px] pointer-events-none"
+            style={{
+              WebkitMask:
+                "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+              WebkitMaskComposite: "destination-out",
+              mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+              maskComposite: "subtract",
+              WebkitClipPath: "padding-box",
+            }}
+          />
+          {/* Texto e Barras Animados */}
+          <span className="relative z-10 inline-flex items-center animate-gradient bg-gradient-to-r from-primary-400 via-primary-200 to-primary-400 bg-[length:300%_100%] bg-clip-text text-transparent font-normal">
+            <span>Agências</span>
+            <span className="mx-2 font-normal opacity-80">|</span>
+            <span>Marketing</span>
+            <span className="mx-2 font-normal opacity-80">|</span>
+            <span>Eventos</span>
+          </span>
         </div>
 
         {/* Título Principal */}
@@ -115,11 +134,8 @@ export default function Hero() {
             Estamos presente no dia a dia das maiores agências do mercado.
           </p>
 
-          {/* Marquee Wrapper com Máscara de Degradê Lateral */}
-          <div className="relative w-full overflow-hidden py-2">
-            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-
+          {/* Marquee Wrapper com Máscara de Degradê Lateral via mask-image */}
+          <div className="relative w-full overflow-hidden py-2 infinity_wrapper">
             <div className="flex w-max gap-24 animate-marquee">
               {/* Via Principal */}
               <div className="flex shrink-0 items-center justify-around gap-24 ">

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,6 +19,7 @@ interface StorytellingItem {
   description: string;
   image: string;
   icons: string[];
+  link: string;
 }
 
 const storytellingItems: StorytellingItem[] = [
@@ -26,40 +28,45 @@ const storytellingItems: StorytellingItem[] = [
     label: "Campanhas com visão 360°",
     title: "Campanhas com visão 360°",
     description: "Briefing, orçamentos, tarefas, pedidos de produção e financeiro no mesmo job. Sua equipe enxerga o projeto inteiro sem trocar de planilha.",
-    image: "/assets/img/bg-modulos.png",
-    icons: ["/assets/icons/icon-link.svg"]
+    image: "/assets/img/campanha-360.jpg",
+    icons: ["/assets/icons/icon-visao.svg"],
+    link: "/funcionalidades#campanhas"
   },
   {
     id: 1,
     label: "Orçamentos pensados para agência",
     title: "Orçamentos pensados para agência",
     description: "Modelos prontos, cálculo com markup e custos de fornecedores. Monte a proposta, envie ao cliente e acompanhe do orçado ao executado.",
-    image: "/assets/img/contratos-pdf.jpg",
-    icons: ["/assets/icons/icon-pdf.svg"]
+    image: "/assets/img/orcamentos-agencias.jpg",
+    icons: ["/assets/icons/icon-orcamento.svg"],
+    link: "/funcionalidades#orcamentos"
   },
   {
     id: 2,
     label: "Tarefas e cronograma",
     title: "Tarefas e cronograma ligados à campanha",
     description: "Organize a entrega em Kanban, Gantt e listas com responsáveis e prazos. Tudo conectado ao job — sem tarefas soltas fora do contexto.",
-    image: "/assets/img/bg-conectado.png",
-    icons: ["/assets/icons/icon-link.svg"]
+    image: "/assets/img/tarefas-cronograma.jpg",
+    icons: ["/assets/icons/icon-kanban.svg"],
+    link: "/funcionalidades#tarefas"
   },
   {
     id: 3,
     label: "Cadastro de fornecedores por link",
     title: "Cadastro de fornecedores por link",
     description: "Envie um link e o fornecedor preenche os próprios dados. Menos retrabalho interno, cadastro completo e pronto para o orçamento e o financeiro.",
-    image: "/assets/img/fornecedores-link.jpg",
-    icons: ["/assets/icons/icon-link.svg"]
+    image: "/assets/img/cadastro-fornecedores.jpg",
+    icons: ["/assets/icons/icon-link.svg"],
+    link: "/funcionalidades#cadastro"
   },
   {
     id: 4,
     label: "Propostas e assinatura digital",
     title: "Propostas e assinatura digital",
     description: "Gere contratos em PDF e envie para assinatura com D4Sign ou DocuSign. Do orçamento à assinatura do cliente, no mesmo fluxo da agência.",
-    image: "/assets/img/integracao-d4sign-docusign.jpg",
-    icons: ["/assets/icons/icon-d4sign.svg", "/assets/icons/icon-docusign.svg"]
+    image: "/assets/img/assinaturas.jpg",
+    icons: ["/assets/icons/icon-d4sign.svg", "/assets/icons/icon-docusign.svg"],
+    link: "/funcionalidades#orcamentos"
   }
 ];
 
@@ -263,9 +270,9 @@ export default function GestaoAgil() {
                     <div
                       key={item.id}
                       style={cardStyle}
-                      className="absolute inset-0 w-full h-full overflow-hidden bg-neutral-900 rounded-none border border-neutral-200 transition-all duration-500 ease-out flex flex-col justify-end shadow-md"
+                      className="group/card absolute inset-0 w-full h-full overflow-hidden bg-neutral-900 rounded-none border border-neutral-200 transition-all duration-500 ease-out flex flex-col justify-end shadow-md cursor-pointer"
                     >
-                      {/* Imagem de Fundo do Card */}
+                      {/* Imagem de Fundo do Card (Sem Zoom no Hover) */}
                       <div className="absolute inset-0 w-full h-full z-0">
                         <Image
                           src={item.image}
@@ -275,21 +282,21 @@ export default function GestaoAgil() {
                         />
                       </div>
 
-                      {/* Overlay de Gradiente Escuro para legibilidade */}
+                      {/* Overlay de Gradiente Escuro Estável */}
                       <div
                         className="absolute inset-0 z-10 pointer-events-none"
                         style={{
-                          background: "linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.1) 80%, transparent 100%)"
+                          background: "linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.75) 45%, rgba(0, 0, 0, 0.2) 85%, transparent 100%)"
                         }}
                         aria-hidden="true"
                       />
 
-                      {/* Textos e Ícones do Card */}
-                      <div className="relative p-6 md:p-12 z-20 flex flex-col justify-end min-h-[40%] text-white">
+                      {/* Textos e Ícones do Card com Animação Suavizada */}
+                      <div className="relative p-6 md:p-10 z-20 flex flex-col justify-end text-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/card:-translate-y-3">
                         {/* Ícones da Funcionalidade */}
-                        <div className="flex items-center gap-3 mb-4">
+                        <div className="flex items-center gap-3 mb-3">
                           {item.icons.map((iconPath, iconIdx) => (
-                            <div key={iconIdx} className="relative w-14 h-14 shrink-0">
+                            <div key={iconIdx} className="relative w-12 h-12 md:w-14 md:h-14 shrink-0">
                               <Image
                                 src={iconPath}
                                 alt={`Ícone ${item.title}`}
@@ -301,7 +308,7 @@ export default function GestaoAgil() {
                         </div>
 
                         {/* Título */}
-                        <h3 className="text-xl md:text-2xl font-display text-white font-normal mb-3 leading-tight text-pretty">
+                        <h3 className="text-xl md:text-2xl font-display text-white font-normal mb-2 leading-tight text-pretty">
                           {item.title}
                         </h3>
 
@@ -309,6 +316,17 @@ export default function GestaoAgil() {
                         <p className="text-sm text-neutral-300 font-sans text-pretty leading-relaxed">
                           {item.description}
                         </p>
+
+                        {/* Link "Saiba mais" com Animação Suavizada no Hover */}
+                        <div className="overflow-hidden max-h-0 opacity-0 group-hover/card:max-h-16 group-hover/card:opacity-100 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] pt-0 group-hover/card:pt-3">
+                          <Link
+                            href={item.link}
+                            className="inline-flex items-center gap-2 text-sm font-medium text-primary-400 hover:text-primary-300 transition-colors duration-200"
+                          >
+                            <span>Saiba mais</span>
+                            <ArrowRight size={16} className="transition-transform duration-300 ease-out group-hover/card:translate-x-1" />
+                          </Link>
+                        </div>
                       </div>
 
                     </div>

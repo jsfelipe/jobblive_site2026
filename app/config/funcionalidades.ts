@@ -9,6 +9,7 @@ export interface CategoriaFuncionalidade {
   label: string;
   summary: string;
   image: string;
+  images?: string[];
   imageAlt: string;
   items: FuncionalidadeItem[];
 }
@@ -19,7 +20,11 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     label: "Campanhas / Projetos",
     summary:
       "O hub do job: briefing, cliente, orçamentos, tarefas e financeiro reunidos na mesma campanha — sem planilhas soltas.",
-    image: "/assets/img/bg-modulos.png",
+    image: "/assets/img/projetos-campanhas.jpg",
+    images: [
+      "/assets/img/projetos-campanhas.jpg",
+      "/assets/img/relatorio-visao-orcamento.jpg",
+    ],
     imageAlt: "Painel de campanhas e projetos no JobbLive",
     items: [
       {
@@ -47,7 +52,7 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     label: "Orçamentos",
     summary:
       "Modelos de agência, markup, custos de fornecedores e proposta ao cliente — do orçado ao executado no mesmo fluxo.",
-    image: "/assets/img/contratos-pdf.jpg",
+    image: "/assets/img/orcamentos-agencias.jpg",
     imageAlt: "Tela de orçamento e proposta no JobbLive",
     items: [
       {
@@ -105,7 +110,7 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     label: "Tarefas",
     summary:
       "Execute o job com Kanban, Gantt, calendário e timesheet ligados à campanha e, quando fizer sentido, ao orçamento.",
-    image: "/assets/img/bg-conectado.png",
+    image: "/assets/img/tarefas-cronograma.jpg",
     imageAlt: "Gestão de tarefas e cronograma no JobbLive",
     items: [
       {
@@ -191,7 +196,7 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     label: "Cadastro",
     summary:
       "Unidades, usuários, permissões e itens prontos para alimentar orçamentos e a operação da agência.",
-    image: "/assets/img/fornecedores-link.jpg",
+    image: "/assets/img/cadastro-fornecedores.jpg",
     imageAlt: "Cadastros e permissões no JobbLive",
     items: [
       {

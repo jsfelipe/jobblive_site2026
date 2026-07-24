@@ -33,6 +33,8 @@ import {
   CalendarDots,
   ChartLineUp,
   Hourglass,
+  CaretLeft,
+  CaretRight,
 } from "@phosphor-icons/react";
 
 const iconMap: Record<
@@ -77,6 +79,20 @@ function FuncionalidadeSection({
   index: number;
 }) {
   const imageOnRight = index % 2 === 0;
+  const images =
+    category.images && category.images.length > 0
+      ? category.images
+      : [category.image];
+
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const prevImage = () => {
+    setActiveImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setActiveImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
 
   return (
     <section
@@ -126,14 +142,59 @@ function FuncionalidadeSection({
             imageOnRight ? "lg:order-2" : "lg:order-1"
           }`}
         >
-          <div className="relative w-full aspect-[16/10] overflow-hidden border border-foreground/10 bg-neutral-50">
-            <Image
-              src={category.image}
-              alt={category.imageAlt}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="relative w-full aspect-[4/3] min-h-[480px] md:min-h-[540px] overflow-hidden border border-foreground/10 bg-neutral-50 shadow-sm group">
+            {images.map((imgSrc, imgIdx) => (
+              <div
+                key={imgSrc}
+                className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${
+                  imgIdx === activeImageIndex
+                    ? "opacity-100 z-10"
+                    : "opacity-0 z-0 pointer-events-none"
+                }`}
+              >
+                <Image
+                  src={imgSrc}
+                  alt={`${category.imageAlt} - Imagem ${imgIdx + 1}`}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            ))}
+
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={prevImage}
+                  aria-label="Imagem anterior"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-neutral-100/90 hover:bg-primary-500 text-neutral-800 hover:text-white border border-neutral-200/80 shadow-sm backdrop-blur-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
+                >
+                  <CaretLeft size={20} weight="bold" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  aria-label="Próxima imagem"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-neutral-100/90 hover:bg-primary-500 text-neutral-800 hover:text-white border border-neutral-200/80 shadow-sm backdrop-blur-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
+                >
+                  <CaretRight size={20} weight="bold" />
+                </button>
+
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-100/90 backdrop-blur-md border border-neutral-200/80 shadow-sm">
+                  {images.map((_, dotIdx) => (
+                    <button
+                      key={dotIdx}
+                      onClick={() => setActiveImageIndex(dotIdx)}
+                      aria-label={`Ir para imagem ${dotIdx + 1}`}
+                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                        dotIdx === activeImageIndex
+                          ? "w-6 bg-primary-500"
+                          : "w-2 bg-neutral-300 hover:bg-neutral-400"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

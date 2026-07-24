@@ -164,10 +164,10 @@ export default function Modulos() {
         </div>
 
         {/* Linha Divisória de Três Colunas Inferiores */}
-        <div className="modulos-cols-grid grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-8">
+        <div className="modulos-cols-grid grid grid-cols-1 md:grid-cols-3">
 
           {/* Coluna 1: Propostas e contratos */}
-          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-8 border-b md:border-b-0 md:border-r border-foreground/10 pb-8 md:pb-0 last:border-0 last:pb-0">
+          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-6 lg:pl-0 border-b md:border-b-0 md:border-r border-foreground/10 pb-8 md:pb-0 last:border-0 last:pb-0">
             {/* Ícone */}
             <div className="text-primary-500 mb-6">
               <FileText size={32} />
@@ -185,7 +185,7 @@ export default function Modulos() {
                   <span className="text-primary-500 shrink-0">
                     <CheckCircle size={24} />
                   </span>
-                  <span className="text-body-lg text-foreground/80">
+                  <span className="text-body-md text-foreground/80">
                     {feature}
                   </span>
                 </div>
@@ -194,7 +194,7 @@ export default function Modulos() {
           </div>
 
           {/* Coluna 2: Financeiro inteligente */}
-          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-8 border-b md:border-b-0 md:border-r border-foreground/10 pb-8 md:pb-0 last:border-0 last:pb-0">
+          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-6 border-b md:border-b-0 md:border-r border-foreground/10 pb-8 md:pb-0 last:border-0 last:pb-0">
             {/* Ícone */}
             <div className="text-primary-500 mb-6">
               <Bank size={32} />
@@ -212,7 +212,7 @@ export default function Modulos() {
                   <span className="text-primary-500 shrink-0">
                     <CheckCircle size={24} />
                   </span>
-                  <span className="text-body-lg text-foreground/80">
+                  <span className="text-body-md text-foreground/80">
                     {feature}
                   </span>
                 </div>
@@ -221,7 +221,7 @@ export default function Modulos() {
           </div>
 
           {/* Coluna 3: Relatórios estratégicos */}
-          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-8 pb-8 md:pb-0 last:border-0 last:pb-0">
+          <div className="modulos-col opacity-0 flex flex-col md:px-4 lg:px-6 lg:pr-0 pb-8 md:pb-0 last:border-0 last:pb-0">
             {/* Ícone */}
             <div className="text-primary-500 mb-6">
               <ChartPieSlice size={32} />
@@ -239,7 +239,7 @@ export default function Modulos() {
                   <span className="text-primary-500 shrink-0">
                     <CheckCircle size={24} />
                   </span>
-                  <span className="text-body-lg text-foreground/80">
+                  <span className="text-body-md text-foreground/80">
                     {feature}
                   </span>
                 </div>
