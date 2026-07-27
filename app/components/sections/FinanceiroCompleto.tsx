@@ -68,7 +68,7 @@ export default function FinanceiroCompleto() {
             Financeiro Completo
           </p>
           <h2 className="fin-title opacity-0 text-pretty leading-tight tracking-tightest mb-6 font-display text-foreground">
-            Do custo do fornecedor no orçamento ao pagamento —{" "}
+            Do custo do fornecedor no orçamento ao pagamento,{" "}
             <span className="text-primary-500">sem digitar de novo.</span>
           </h2>
           <p className="fin-lead opacity-0 text-lg text-foreground/70 max-w-3xl mx-auto text-pretty">

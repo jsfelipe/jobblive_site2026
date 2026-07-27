@@ -142,25 +142,29 @@ function FuncionalidadeSection({
             imageOnRight ? "lg:order-2" : "lg:order-1"
           }`}
         >
-          <div className="relative w-full aspect-[4/3] min-h-[480px] md:min-h-[540px] overflow-hidden border border-foreground/10 bg-neutral-50 shadow-sm group">
-            {images.map((imgSrc, imgIdx) => (
-              <div
-                key={imgSrc}
-                className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${
-                  imgIdx === activeImageIndex
-                    ? "opacity-100 z-10"
-                    : "opacity-0 z-0 pointer-events-none"
-                }`}
-              >
-                <Image
-                  src={imgSrc}
-                  alt={`${category.imageAlt} - Imagem ${imgIdx + 1}`}
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            ))}
+          <div className="relative w-full overflow-hidden border border-foreground/10 bg-neutral-50 shadow-sm group transition-all duration-300">
+            {images.map((imgSrc, imgIdx) => {
+              const isActive = imgIdx === activeImageIndex;
+              return (
+                <div
+                  key={imgSrc}
+                  className={`w-full transition-opacity duration-500 ease-in-out ${
+                    isActive
+                      ? "relative opacity-100 z-10"
+                      : "absolute inset-0 opacity-0 z-0 pointer-events-none"
+                  }`}
+                >
+                  <Image
+                    src={imgSrc}
+                    alt={`${category.imageAlt} - Imagem ${imgIdx + 1}`}
+                    width={1200}
+                    height={800}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="w-full h-auto block"
+                  />
+                </div>
+              );
+            })}
 
             {images.length > 1 && (
               <>

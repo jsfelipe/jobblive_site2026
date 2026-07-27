@@ -53,6 +53,10 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     summary:
       "Modelos de agência, markup, custos de fornecedores e proposta ao cliente — do orçado ao executado no mesmo fluxo.",
     image: "/assets/img/orcamentos-agencias.jpg",
+    images: [
+      "/assets/img/editar-orcamento.jpg",
+      "/assets/img/editar-orcamento-trabalho.jpg",
+    ],
     imageAlt: "Tela de orçamento e proposta no JobbLive",
     items: [
       {
@@ -111,6 +115,12 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     summary:
       "Execute o job com Kanban, Gantt, calendário e timesheet ligados à campanha e, quando fizer sentido, ao orçamento.",
     image: "/assets/img/tarefas-cronograma.jpg",
+    images: [
+      "/assets/img/gestao-de-tarefas.jpg",
+      "/assets/img/visualizar-projeto.jpg",
+      "/assets/img/calendario.jpg",
+      "/assets/img/editar-grupo.jpg",
+    ],
     imageAlt: "Gestão de tarefas e cronograma no JobbLive",
     items: [
       {
@@ -151,6 +161,12 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     summary:
       "O financeiro nasce no orçamento: custos de fornecedores viram lançamentos, PPs e controle de caixa — sem digitar de novo.",
     image: "/assets/img/conciliacao-bancaria.jpg",
+    images: [
+      "/assets/img/contas-receber.jpg",
+      "/assets/img/contas-pagar.jpg",
+      "/assets/img/fluxo-caixa.jpg",
+      "/assets/img/orcamento-faturar.jpg",
+    ],
     imageAlt: "Módulo financeiro integrado ao orçamento no JobbLive",
     items: [
       {
@@ -197,6 +213,10 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     summary:
       "Unidades, usuários, permissões e itens prontos para alimentar orçamentos e a operação da agência.",
     image: "/assets/img/cadastro-fornecedores.jpg",
+    images: [
+      "/assets/img/pessoas.jpg",
+      "/assets/img/produtos.jpg",
+    ],
     imageAlt: "Cadastros e permissões no JobbLive",
     items: [
       {
