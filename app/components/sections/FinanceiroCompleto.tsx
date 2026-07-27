@@ -78,7 +78,7 @@ export default function FinanceiroCompleto() {
 
         <div className="fin-block opacity-0 relative w-full overflow-hidden bg-secondary-900 text-white rounded-none p-6 md:p-12 lg:p-16">
           <Image
-            src="/assets/img/conciliacao-bancaria.jpg"
+            src="/assets/img/orcamento-financeiro.png"
             alt="Conciliação e financeiro integrado ao orçamento no JobbLive"
             width={900}
             height={500}
