@@ -7,7 +7,7 @@ import GestaoAgil from "./components/sections/GestaoAgil";
 import FinanceiroCompleto from "./components/sections/FinanceiroCompleto";
 import Modulos from "./components/sections/Modulos";
 import Indicado from "./components/sections/Indicado";
-import Depoimentos from "./components/sections/Depoimentos";
+// import Depoimentos from "./components/sections/Depoimentos";
 import CTA from "./components/sections/CTA";
 import Footer from "./components/layout/Footer";
 
@@ -40,8 +40,9 @@ export default function Home() {
         
         <Indicado />
         
-        {/* Seção Depoimentos */}
+        {/* Seção Depoimentos — ocultada temporariamente
         <Depoimentos />
+        */}
 
         {/* Seção CTA Final */}
         <CTA />

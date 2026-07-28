@@ -7,7 +7,7 @@ import themeData from "../../config/theme.json";
 
 const currentYear = new Date().getFullYear();
 
-import { InstagramLogo, LinkedinLogo, YoutubeLogo } from "@phosphor-icons/react/dist/ssr";
+import { InstagramLogo, YoutubeLogo } from "@phosphor-icons/react/dist/ssr";
 
 
 
@@ -25,7 +25,7 @@ const navLinks = [
 
 const socialLinks = [
   { name: "Instagram", href: contactsData.instagram, icon: <InstagramLogo className="w-4 h-4" /> },
-  { name: "Linkedin", href: contactsData.linkedin, icon: <LinkedinLogo className="w-4 h-4" /> },
+  // { name: "Linkedin", href: contactsData.linkedin, icon: <LinkedinLogo className="w-4 h-4" /> },
   { name: "Youtube", href: contactsData.youtube, icon: <YoutubeLogo className="w-4 h-4" /> },
 ];
 

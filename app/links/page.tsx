@@ -21,11 +21,11 @@ const InstagramIcon = () => (
   </svg>
 );
 
-const LinkedinIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 fill-current">
-    <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v80a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm-8-32a12,12,0,1,1,12-12A12,12,0,0,1,88,80Zm96,32v80a8,8,0,0,1-16,0V148c0-11-4.18-20-16-20s-16,9-16,20v44a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0v8c6.64-7.2,14.65-12,24-12C172.5,108,184,120.47,184,144Z"/>
-  </svg>
-);
+// const LinkedinIcon = () => (
+//   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 fill-current">
+//     <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v80a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm-8-32a12,12,0,1,1,12-12A12,12,0,0,1,88,80Zm96,32v80a8,8,0,0,1-16,0V148c0-11-4.18-20-16-20s-16,9-16,20v44a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0v8c6.64-7.2,14.65-12,24-12C172.5,108,184,120.47,184,144Z"/>
+//   </svg>
+// );
 
 const FacebookIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 fill-current">
@@ -95,13 +95,13 @@ export default function LinksPage() {
       icon: <InstagramIcon />,
       isPrimary: false,
     },
-    {
-      id: "linkedin",
-      label: "LinkedIn",
-      url: contactsData.linkedin,
-      icon: <LinkedinIcon />,
-      isPrimary: false,
-    },
+    // {
+    //   id: "linkedin",
+    //   label: "LinkedIn",
+    //   url: contactsData.linkedin,
+    //   icon: <LinkedinIcon />,
+    //   isPrimary: false,
+    // },
     {
       id: "facebook",
       label: "Facebook",

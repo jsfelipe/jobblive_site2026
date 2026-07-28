@@ -220,9 +220,9 @@ export const funcionalidadesData: CategoriaFuncionalidade[] = [
     imageAlt: "Cadastros e permissões no JobbLive",
     items: [
       {
-        title: "Cadastro de Unidades sem limites",
+        title: "Cadastro de Unidades sem limites*",
         description:
-          "Adicione e gerencie todas as unidades físicas ou filiais da sua agência em uma única plataforma sem restrições de limites de quantidade.",
+          "Adicione e gerencie todas as unidades físicas ou filiais da sua agência em uma única plataforma sem restrições de limites de quantidade. *Disponível no plano Enterprise.",
         iconName: "Buildings",
       },
       {

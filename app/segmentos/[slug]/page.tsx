@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Navbar from "../../components/ui/Navbar";
 import Footer from "../../components/layout/Footer";
 import SegmentHero from "../../components/ui/SegmentHero";
-import { segmentosData } from "../../config/segmentos";
+import { segmentosData, getPublishedSegmentos } from "../../config/segmentos";
 import JsonLd from "../../components/seo/JsonLd";
 import contactsData from "../../config/contacts.json";
 import {
@@ -20,10 +20,12 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-// Gera os parâmetros estáticos para compilação prévia das 8 páginas (SEO/GEO instantâneo)
+export const dynamicParams = false;
+
+// Gera os parâmetros estáticos apenas para segmentos publicados
 export async function generateStaticParams() {
-  return Object.keys(segmentosData).map((slug) => ({
-    slug,
+  return getPublishedSegmentos().map((segmento) => ({
+    slug: segmento.slug,
   }));
 }
 
@@ -32,9 +34,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const data = segmentosData[slug];
 
-  if (!data) {
+  if (!data || data.published === false) {
     return {
       title: "Segmento não encontrado | Jobb Live",
+      robots: { index: false, follow: false },
     };
   }
 
@@ -96,7 +99,7 @@ export default async function SegmentoPage({ params }: Props) {
   const { slug } = await params;
   const data = segmentosData[slug];
 
-  if (!data) {
+  if (!data || data.published === false) {
     notFound();
   }
 

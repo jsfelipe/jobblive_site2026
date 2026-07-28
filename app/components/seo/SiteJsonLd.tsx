@@ -13,7 +13,7 @@ export default function SiteJsonLd() {
   const email = contactsData.email || "contato@jobblive.com.br";
   const sameAs = [
     contactsData.instagram,
-    contactsData.linkedin,
+    // contactsData.linkedin,
     contactsData.facebook,
     contactsData.tiktok,
     contactsData.youtube,

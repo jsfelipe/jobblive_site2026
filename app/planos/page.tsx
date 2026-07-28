@@ -44,11 +44,11 @@ const faqItems: FAQItem[] = [
   {
     question: "Na minha empresa, 5 pessoas irão utilizar o sistema. Qual seria o valor?",
     answerText:
-      "Para uma agência com 5 usuários no Plano Enterprise mensal, o valor é de (5 x R$ 99,00) = R$ 495,00 ao mês. No plano anual com 18% de desconto, o valor equivale a (5 x R$ 79,90) = R$ 399,50 ao mês. Você pode adicionar novos usuários à sua conta sempre que a equipe crescer.",
+      "O valor varia conforme o número de usuários e o plano escolhido. Entre em contato conosco para conhecer condições e descontos especiais de acordo com a quantidade de usuários da sua equipe. Você pode adicionar novos usuários à sua conta sempre que a equipe crescer.",
     answerJsx: (
       <span>
-        Para uma agência com 5 usuários no Plano Enterprise mensal, o valor é de (5 x R$ 99,00) = R$ 495,00 ao mês.
-        No plano anual com 18% de desconto, o valor equivale a (5 x R$ 79,90) = R$ 399,50 ao mês.
+        O valor varia conforme o número de usuários e o plano escolhido.
+        Entre em contato conosco para conhecer condições e <strong>descontos especiais</strong> de acordo com a quantidade de usuários da sua equipe.
         Você pode adicionar novos usuários à sua conta sempre que a equipe crescer.
       </span>
     ),
@@ -66,11 +66,11 @@ const faqItems: FAQItem[] = [
   {
     question: "Como é a segurança das informações e backups no Jobb Live?",
     answerText:
-      "O sistema conta com criptografia de ponta a ponta através de certificação SSL de 256 bits (a mesma tecnologia utilizada por bancos). A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos. Além disso, você pode gerar um backup navegável da sua conta quando desejar.",
+      "O sistema conta com criptografia de ponta a ponta através de certificação SSL de 256 bits (a mesma tecnologia utilizada por bancos). A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos.",
     answerJsx: (
       <span>
         O sistema conta com criptografia de ponta a ponta através de certificação SSL de 256 bits (a mesma tecnologia utilizada por bancos).
-        A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos. Além disso, você pode gerar um backup navegável da sua conta quando desejar.
+        A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos. 
       </span>
     ),
   },
@@ -99,10 +99,10 @@ const faqItems: FAQItem[] = [
   {
     question: "Como funcionam os treinamentos e o suporte para a minha equipe?",
     answerText:
-      "Sua agência tem acesso gratuito à nossa Central de Ajuda com tutoriais detalhados e suporte especializado por chat e e-mail. Também oferecemos a opção de Implantação Orientada com um consultor dedicado para acelerar o onboarding da sua equipe.",
+      "Sua agência tem acesso gratuito a vídeos tutoriais e suporte especializado via chat, ticket e WhatsApp. Também oferecemos a opção de Implantação Orientada com um consultor dedicado para acelerar o onboarding da sua equipe.",
     answerJsx: (
       <span>
-        Sua agência tem acesso gratuito à nossa Central de Ajuda com tutoriais detalhados e suporte especializado por chat e e-mail.
+        Sua agência tem acesso gratuito a vídeos tutoriais e suporte especializado via chat, ticket e WhatsApp.
         Também oferecemos a opção de <strong>Implantação Orientada</strong> com um consultor dedicado para acelerar o onboarding da sua equipe.
       </span>
     ),

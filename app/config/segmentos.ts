@@ -10,6 +10,12 @@ export interface SegmentoData {
   features: { title: string; description: string }[];
   ctaTitle: string;
   ctaSubtitle: string;
+  /** Se false, some do site (Indicado, sitemap, rotas). Default: true. */
+  published?: boolean;
+}
+
+export function getPublishedSegmentos(): SegmentoData[] {
+  return Object.values(segmentosData).filter((s) => s.published !== false);
 }
 
 export const segmentosData: Record<string, SegmentoData> = {
@@ -54,8 +60,8 @@ export const segmentosData: Record<string, SegmentoData> = {
         description: "Registro de horas simples integrado às tarefas, gerando relatórios automáticos de custo e esforço por projeto."
       },
       {
-        title: "Gestão de contratos recorrentes",
-        description: "Controle de retainers, renovações, faturamento mensal automático e reajustes sem processos manuais."
+        title: "Geração de comissões a receber",
+        description: "Calcule e acompanhe comissões a receber de forma automática, com valores claros por job, parceiro ou venda."
       },
       {
         title: "Relatórios de rentabilidade",
@@ -96,14 +102,14 @@ export const segmentosData: Record<string, SegmentoData> = {
         description: "Seus parceiros atualizam dados cadastrais e enviam notas fiscais diretamente pelo sistema, reduzindo a burocracia do financeiro."
       },
       {
-        title: "Gestão ágil de compras e reembolsos",
-        description: "Aprove compras de insumos para os eventos e controle adiantamentos e reembolsos de produção de forma simples."
+        title: "Gestão de despesas extras e reembolsos",
+        description: "Registre gastos como alimentação, Uber e outros custos do dia a dia, e controle reembolsos de forma simples."
       }
     ],
     features: [
       {
-        title: "Orçamentador de eventos",
-        description: "Criação de orçamentos detalhados por categorias de custos, margem e impostos específicos de live marketing."
+        title: "Orçamentos de ativações e eventos",
+        description: "Monte propostas completas para ativações e campanhas, com categorias de custo, margem e impostos pensados para a operação de live marketing."
       },
       {
         title: "Controle de custos de campo",
@@ -120,6 +126,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-publicidade": {
     slug: "agencia-de-publicidade",
     name: "agências de publicidade",
+    published: false,
     metaTitle: "Gestão para agências de publicidade e mídia | Jobb Live",
     metaDescription: "Centralize a mídia, fluxo de criação, faturamento e o controle de BV da sua agência de publicidade em um único sistema integrado.",
     heroTitle: "Centralize a operação, mídia e o controle de BV da sua agência em uma única tela",
@@ -276,6 +283,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-trade-marketing": {
     slug: "agencia-de-trade-marketing",
     name: "Agências de Trade Marketing",
+    published: false,
     metaTitle: "Gestão para Agências de Trade Marketing | Jobb Live",
     metaDescription: "Otimize a gestão de campanhas de trade, positivação de PDV, promotores e faturamento de contratos corporativos de grande escala.",
     heroTitle: "Gerencie suas campanhas de trade e a operação de PDV com controle financeiro absoluto",

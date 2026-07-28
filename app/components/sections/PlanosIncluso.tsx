@@ -25,9 +25,9 @@ const benefits: BenefitItem[] = [
   },
   {
     icon: GraduationCap,
-    title: "Treinamentos online e webinars",
+    title: "Vídeos tutoriais e treinamento online",
     description:
-      "Acesse treinamentos práticos, tutoriais gravados e webinars para capacitar sua equipe e extrair o máximo potencial do sistema na rotina de trabalhos da agência.",
+      "Acesse vídeos tutoriais e treinamentos online para capacitar sua equipe. Contamos também com suporte compartilhando tela, para orientar o uso do sistema na rotina da agência.",
   },
   {
     icon: Headphones,
@@ -39,7 +39,7 @@ const benefits: BenefitItem[] = [
     icon: Database,
     title: "Backup diário seguro",
     description:
-      "Backups automáticos realizados diariamente para garantir total proteção. Além disso, você pode baixar o backup navegável da sua conta quando desejar.",
+      "Backups automáticos realizados diariamente para garantir total proteção dos dados da sua conta.",
   },
   {
     icon: Folders,

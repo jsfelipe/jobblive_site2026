@@ -9,7 +9,13 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/teste-gratis/sucesso"],
+        disallow: [
+          "/api/",
+          "/admin/",
+          "/teste-gratis/sucesso",
+          "/segmentos/agencia-de-publicidade",
+          "/segmentos/agencia-de-trade-marketing",
+        ],
       },
       {
         userAgent: [
@@ -19,7 +25,13 @@ export default function robots(): MetadataRoute.Robots {
           "Applebot-Extended",
         ],
         allow: "/",
-        disallow: ["/api/", "/admin/", "/teste-gratis/sucesso"],
+        disallow: [
+          "/api/",
+          "/admin/",
+          "/teste-gratis/sucesso",
+          "/segmentos/agencia-de-publicidade",
+          "/segmentos/agencia-de-trade-marketing",
+        ],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

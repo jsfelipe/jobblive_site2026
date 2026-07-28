@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
-import { segmentosData } from "./config/segmentos";
+import { getPublishedSegmentos } from "./config/segmentos";
 import { getSiteUrl } from "./lib/site";
 
 function getStaticRoutes(dir: string, baseRoute = ""): string[] {
@@ -49,8 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: routePath === "/" ? 1.0 : 0.8,
   }));
 
-  const segmentoRoutes = Object.keys(segmentosData).map((slug) => ({
-    url: `${baseUrl}/segmentos/${slug}`,
+  const segmentoRoutes = getPublishedSegmentos().map((segmento) => ({
+    url: `${baseUrl}/segmentos/${segmento.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
