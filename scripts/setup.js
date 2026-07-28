@@ -78,6 +78,9 @@ NEXT_PUBLIC_SITE_URL=${config.NEXT_PUBLIC_SITE_URL || ''}
 # Google Search Console (ID de verificação da Meta Tag, ex: "google-site-verification")
 NEXT_PUBLIC_GSC_VERIFICATION_ID=${config.NEXT_PUBLIC_GSC_VERIFICATION_ID || ''}
 
+# Google Analytics 4 (Measurement ID, ex: G-XXXXXXXX)
+NEXT_PUBLIC_GA_ID=${config.NEXT_PUBLIC_GA_ID || ''}
+
 # Google Tag Manager (ID do contêiner, ex: GTM-XXXXXX)
 NEXT_PUBLIC_GTM_ID=${config.NEXT_PUBLIC_GTM_ID || ''}
 
@@ -1635,6 +1638,9 @@ const server = http.createServer((req, res) => {
                     </div>
                     
                     <div class="input-group">
+                        <label for="NEXT_PUBLIC_GA_ID">Google Analytics 4 (Measurement ID)</label>
+                        <input type="text" id="NEXT_PUBLIC_GA_ID" name="NEXT_PUBLIC_GA_ID" placeholder="G-XXXXXXXX" value="${envData.NEXT_PUBLIC_GA_ID || ''}">
+
                         <label for="NEXT_PUBLIC_GTM_ID">Google Tag Manager (ID)</label>
                         <input type="text" id="NEXT_PUBLIC_GTM_ID" name="NEXT_PUBLIC_GTM_ID" placeholder="GTM-XXXXXX" value="${envData.NEXT_PUBLIC_GTM_ID || ''}">
                     </div>
@@ -1953,6 +1959,7 @@ const server = http.createServer((req, res) => {
                 'NEXT_PUBLIC_PROJECT_NAME',
                 'NEXT_PUBLIC_SITE_URL',
                 'NEXT_PUBLIC_GSC_VERIFICATION_ID',
+                'NEXT_PUBLIC_GA_ID',
                 'NEXT_PUBLIC_GTM_ID',
                 'NEXT_PUBLIC_FACEBOOK_PIXEL_ID',
                 'NEXT_PUBLIC_LINKEDIN_PARTNER_ID',

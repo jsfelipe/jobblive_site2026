@@ -1,4 +1,5 @@
 // src/lib/tracking/index.ts
+import * as ga from "./ga";
 import * as gtm from "./gtm";
 import * as pixel from "./pixel";
 import * as linkedin from "./linkedin";
@@ -11,12 +12,14 @@ export const LINKEDIN_CONVERSION_IDS = {
 };
 
 export const trackPageview = (url: string) => {
+    ga.pageview(url);
     gtm.pageview(url);
     pixel.pageview();
     linkedin.pageview();
 };
 
 export const trackEvent = (eventData: TrackingEvent) => {
+    ga.event(eventData);
     gtm.event(eventData);
     if (eventData.action === "lead_form_submit") {
         pixel.event("Lead", { category: eventData.category });

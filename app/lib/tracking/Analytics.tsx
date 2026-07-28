@@ -1,9 +1,9 @@
-// src/lib/tracking/Analytics.tsx
 'use client'
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
+import { GA_ID, pageview as gaPageview } from './ga'
 import { GTM_ID, pageview as gtmPageview } from './gtm'
 import { FB_PIXEL_ID, pageview as pixelPageview } from './pixel'
 import { LINKEDIN_PARTNER_ID, pageview as linkedinPageview } from './linkedin'
@@ -16,6 +16,7 @@ export default function Analytics() {
         if (pathname) {
             const queryString = searchParams.toString()
             const url = queryString ? `${pathname}?${queryString}` : pathname
+            gaPageview(url)
             gtmPageview(url)
             pixelPageview()
             linkedinPageview()
@@ -24,6 +25,28 @@ export default function Analytics() {
 
     return (
         <>
+            {/* Google Analytics 4 */}
+            {GA_ID && (
+                <>
+                    <Script
+                        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                        strategy="afterInteractive"
+                    />
+                    <Script
+                        id="ga-script"
+                        strategy="afterInteractive"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `,
+                        }}
+                    />
+                </>
+            )}
+
             {/* GTM Script */}
             {GTM_ID && (
                 <Script
@@ -57,10 +80,12 @@ export default function Analytics() {
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '${FB_PIXEL_ID}');
+              fbq('track', 'PageView');
             `,
                     }}
                 />
             )}
+
             {/* LinkedIn Insight Tag Script */}
             {LINKEDIN_PARTNER_ID && (
                 <Script
@@ -82,6 +107,32 @@ export default function Analytics() {
                 />
             )}
 
+            {/* GTM noscript */}
+            {GTM_ID && (
+                <noscript>
+                    <iframe
+                        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+                        height="0"
+                        width="0"
+                        style={{ display: 'none', visibility: 'hidden' }}
+                        title="Google Tag Manager"
+                    />
+                </noscript>
+            )}
+
+            {/* Meta Pixel noscript */}
+            {FB_PIXEL_ID && (
+                <noscript>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        height="1"
+                        width="1"
+                        style={{ display: 'none' }}
+                        src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+                        alt=""
+                    />
+                </noscript>
+            )}
         </>
     )
 }

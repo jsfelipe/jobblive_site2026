@@ -16,6 +16,8 @@ const siteUrl = getSiteUrl();
 // Carrega os metadados principais (da rota Home "/")
 const baseMetadata = getMetadataForPath("/");
 
+const gscVerificationId = process.env.NEXT_PUBLIC_GSC_VERIFICATION_ID;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: baseMetadata.title,
@@ -27,9 +29,12 @@ export const metadata: Metadata = {
   alternates: baseMetadata.alternates,
   openGraph: {
     ...baseMetadata.openGraph,
-    siteName: baseMetadata.title?.toString() || undefined,
+    siteName: "Jobb Live",
   },
   twitter: baseMetadata.twitter,
+  ...(gscVerificationId
+    ? { verification: { google: gscVerificationId } }
+    : {}),
 };
 
 export default function RootLayout({
