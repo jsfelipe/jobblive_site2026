@@ -179,7 +179,7 @@ export default function Indicado() {
         </div>
 
         {/* Grid de Cards Vermelhos Sem Arredondamento */}
-        <div className="indicado-cards-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 ">
+        <div className="indicado-cards-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 ">
           {targetCards.map((card, index) => {
             return (
               <Link
