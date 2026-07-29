@@ -77,14 +77,6 @@ export default function TesteGratisPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                     </span>
-                    <span className="text-white/90 text-body-md">Configuração simples em menos de 2 minutos</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="flex items-center justify-center bg-primary-500/10 text-primary-400 p-1 rounded-full shrink-0 mt-0.5">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-3.5 h-3.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-                    </span>
                     <span className="text-white/90 text-body-md">Suporte humanizado em português</span>
                   </li>
                 </ul>

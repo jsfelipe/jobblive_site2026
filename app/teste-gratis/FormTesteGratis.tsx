@@ -52,7 +52,7 @@ export default function FormTesteGratis() {
     qtde_usuarios: 1, // Padrão 1
   });
 
-  const [interesses, setInteresses] = useState<string[]>([]);
+  // const [interesses, setInteresses] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
@@ -83,16 +83,16 @@ export default function FormTesteGratis() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Gerenciamento de Checkboxes de Interesses
-  const handleCheckboxChange = (value: string) => {
-    setInteresses((prev) => {
-      if (prev.includes(value)) {
-        return prev.filter((item) => item !== value);
-      } else {
-        return [...prev, value];
-      }
-    });
-  };
+  // Gerenciamento de Checkboxes de Interesses (oculto temporariamente)
+  // const handleCheckboxChange = (value: string) => {
+  //   setInteresses((prev) => {
+  //     if (prev.includes(value)) {
+  //       return prev.filter((item) => item !== value);
+  //     } else {
+  //       return [...prev, value];
+  //     }
+  //   });
+  // };
 
   // Envio do formulário
   const handleSubmit = async (e: React.FormEvent) => {
@@ -100,8 +100,9 @@ export default function FormTesteGratis() {
     setLoading(true);
     setErrorMsg(null);
 
-    // Constrói modulos_interesse de acordo com a seleção ou "Vazio"
-    const modulosInteresse = interesses.length > 0 ? interesses.join(",") : "Vazio";
+    // Interesses ocultos: envia "Vazio"
+    const modulosInteresse = "Vazio";
+    // const modulosInteresse = interesses.length > 0 ? interesses.join(",") : "Vazio";
 
     // Dados prontos para o payload
     const payload = {
@@ -341,7 +342,7 @@ export default function FormTesteGratis() {
 
       </div>
 
-      {/* Bloco de Interesses (Checkbox) */}
+      {/* Bloco de Interesses (Checkbox) — oculto temporariamente
       <div className="flex flex-col gap-3 pt-2">
         <div>
           <h4 className="text-body-md font-medium text-text-primary">
@@ -351,7 +352,6 @@ export default function FormTesteGratis() {
         </div>
 
         <div className="flex flex-col gap-2.5">
-          {/* Interesse 1 */}
           <label className="flex items-center gap-3 cursor-pointer group select-none">
             <div className="relative flex items-center justify-center">
               <input
@@ -385,7 +385,6 @@ export default function FormTesteGratis() {
             </span>
           </label>
 
-          {/* Interesse 2 */}
           <label className="flex items-center gap-3 cursor-pointer group select-none">
             <div className="relative flex items-center justify-center">
               <input
@@ -419,7 +418,6 @@ export default function FormTesteGratis() {
             </span>
           </label>
 
-          {/* Interesse 3 */}
           <label className="flex items-center gap-3 cursor-pointer group select-none">
             <div className="relative flex items-center justify-center">
               <input
@@ -454,6 +452,7 @@ export default function FormTesteGratis() {
           </label>
         </div>
       </div>
+      */}
 
       {/* Código Promocional (Oculto ou visível se quiser, mas original era oculto / preenchido internamente) */}
       <input type="hidden" name="codigo_promocao" value={form.codigo_promocao} />

@@ -23,12 +23,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Funcionalidades", href: "/funcionalidades" },
-    { name: "Planos", href: "/planos" },
-    { name: "Dúvidas", href: "/duvidas" },
-    { name: "Blog", href: "/blog" },
-    { name: "Ajuda", href: "/ajuda" },
+    { name: "Home", href: "/", external: false },
+    { name: "Funcionalidades", href: "/funcionalidades", external: false },
+    { name: "Planos", href: "/planos", external: false },
+    { name: "Dúvidas", href: "/duvidas", external: false },
+    // { name: "Blog", href: "/blog", external: false },
+    { name: "Ajuda", href: contactsData.whatsappLink || "https://wa.me/5581998504107", external: true },
   ];
 
 
@@ -63,16 +63,30 @@ export default function Navbar() {
         {/* Links de navegação desktop */}
         <nav className="hidden md:flex items-center gap-5">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = !link.external && pathname === link.href;
+            const className = isActive
+              ? "link-nav link-nav-active text-sm text-primary font-normal"
+              : "link-nav text-sm text-foreground/80 hover:text-primary transition-colors";
+
+            if (link.external) {
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {link.name}
+                </a>
+              );
+            }
+
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={
-                  isActive
-                    ? "link-nav link-nav-active text-sm text-primary font-normal"
-                    : "link-nav text-sm text-foreground/80 hover:text-primary transition-colors"
-                }
+                className={className}
               >
                 {link.name}
               </Link>
@@ -136,17 +150,32 @@ export default function Navbar() {
           {/* Links Mobile alinhados à esquerda e espaçados */}
           <nav className="flex flex-col gap-6 mt-8 px-2">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive = !link.external && pathname === link.href;
+              const className = isActive
+                ? "text-xl font-normal text-primary"
+                : "text-xl font-normal text-foreground/90 hover:text-primary transition-colors";
+
+              if (link.external) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    className={className}
+                  >
+                    {link.name}
+                  </a>
+                );
+              }
+
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={
-                    isActive
-                      ? "text-xl font-normal text-primary"
-                      : "text-xl font-normal text-foreground/90 hover:text-primary transition-colors"
-                  }
+                  className={className}
                 >
                   {link.name}
                 </Link>

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import contactsData from "../../config/contacts.json";
+import themeData from "../../config/theme.json";
 import { getMetadataForPath } from "../../lib/seo";
 
 export const metadata = getMetadataForPath("/teste-gratis/sucesso");
@@ -9,19 +10,22 @@ export const metadata = getMetadataForPath("/teste-gratis/sucesso");
 export default function TesteSucessoPage() {
   const whatsappLink = contactsData.whatsappLink || "https://wa.me/5581998504107";
   const supportEmail = contactsData.email || "contato@jobblive.com.br";
+  const logoSrc = themeData.logoLight || "/assets/img/jobb-live-logotipo-light.svg";
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground justify-between">
 
       {/* Cabeçalho Minimalista */}
       <header className="py-6 px-4 md:px-8 flex justify-center border-b border-border-subtle ">
-        <Link href="/" className="w-32 h-auto relative flex items-center justify-center">
+        <Link href="/" className="flex items-center justify-center hover:opacity-90 transition-opacity">
           <Image
-            src="/assets/img/logotipo-jobblive-light.svg"
+            src={logoSrc}
             alt="Jobb Live"
-            width={130}
-            height={35}
-            className="w-full h-auto object-contain"
+            width={120}
+            height={36}
+            className="h-8 md:h-9 w-auto object-contain"
+            unoptimized
+            priority
           />
         </Link>
       </header>
@@ -51,7 +55,7 @@ export default function TesteSucessoPage() {
 
           {/* Descrição */}
           <p className="text-body-md text-text-secondary text-pretty leading-relaxed mb-6">
-            Estamos preparando o seu ambiente de testes. Em alguns minutos, você receberá um e-mail em sua caixa de entrada contendo as credenciais de acesso e as instruções para começar.
+            Sua solicitação foi enviada com sucesso. Em breve, nossos consultores(as) irão disponibilizar o seu teste e entrar em contato para informar sobre nossa proposta comercial.
           </p>
 
           {/* Dica Importante */}
@@ -76,7 +80,7 @@ export default function TesteSucessoPage() {
               />
             </svg>
             <div>
-              <span className="font-semibold text-text-primary">Nota importante:</span> Se você não receber nosso e-mail em até 5 minutos, verifique sua pasta de <span className="font-semibold">Spam / Lixo Eletrônico</span> ou entre em contato pelo e-mail <span className="underline">{supportEmail}</span>.
+              <span className="font-semibold text-text-primary">Nota importante:</span> Fique atento ao seu e-mail e WhatsApp. Se preferir, fale conosco pelo e-mail <span className="underline">{supportEmail}</span>.
             </div>
           </div>
 
