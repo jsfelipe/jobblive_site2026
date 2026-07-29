@@ -25,7 +25,7 @@ export default function PlanosImplantacao() {
             </h2>
 
             <p className="text-body-md text-white/80 font-sans text-pretty leading-relaxed">
-              Nossa equipe de especialistas está pronta para ajudar sua agência a estruturar processos, migrar dados e tornar o uso do Jobb Live altamente estratégico, acelerando os resultados e a produtividade do seu time.
+              Nossa equipe de especialistas está pronta para ajudar sua agência a estruturar processos, migrar dados e tornar o uso do JobbLive altamente estratégico, acelerando os resultados e a produtividade do seu time.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 font-sans text-sm text-white/90">

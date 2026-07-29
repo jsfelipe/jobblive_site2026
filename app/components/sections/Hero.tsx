@@ -105,7 +105,7 @@ export default function Hero() {
         {/* Título Principal */}
         <h1 className="hero-title opacity-0 max-w-4xl text-foreground text-pretty tracking-tightest leading-tightest mb-6">
           Software de gestão para <br className="hidden md:block" />
-          <span className="text-primary-500">agência de marketing.</span>
+          <span className="text-primary-500">Agência de marketing, live marketing e eventos.</span>
         </h1>
 
         {/* Subtítulo / Descrição */}

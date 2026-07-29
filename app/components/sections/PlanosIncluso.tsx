@@ -33,7 +33,7 @@ const benefits: BenefitItem[] = [
     icon: Headphones,
     title: "Melhorias contínuas e suporte",
     description:
-      "O Jobb Live recebe atualizações frequentes sem custo adicional. Nossa equipe de suporte está pronta para atender você via chat, e-mail e canal de dúvidas.",
+      "O JobbLive recebe atualizações frequentes sem custo adicional. Nossa equipe de suporte está pronta para atender você via chat, e-mail e canal de dúvidas.",
   },
   {
     icon: Database,

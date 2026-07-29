@@ -20,7 +20,7 @@ export default function TesteSucessoPage() {
         <Link href="/" className="flex items-center justify-center hover:opacity-90 transition-opacity">
           <Image
             src={logoSrc}
-            alt="Jobb Live"
+            alt="JobbLive"
             width={120}
             height={36}
             className="h-8 md:h-9 w-auto object-contain"
@@ -107,7 +107,7 @@ export default function TesteSucessoPage() {
 
       {/* Rodapé Minimalista */}
       <footer className="py-6 text-center text-xs text-text-tertiary border-t border-border-subtle ">
-        &copy; {new Date().getFullYear()} Jobb Live. Todos os direitos reservados.
+        &copy; {new Date().getFullYear()} JobbLive. Todos os direitos reservados.
       </footer>
 
     </div>

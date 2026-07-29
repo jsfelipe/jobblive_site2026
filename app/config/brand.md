@@ -2,11 +2,11 @@
 
 # brand.md
 
-# Brand Guidelines — Jobb Live
+# Brand Guidelines — JobbLive
 
 ## Visão da Marca
 
-A Jobb Live é uma plataforma de gestão criada para agências digitais modernas.  
+A JobbLive é uma plataforma de gestão criada para agências digitais modernas.  
 Nosso posicionamento combina tecnologia, clareza operacional e crescimento estratégico em uma experiência premium, minimalista e eficiente.
 
 A marca deve transmitir:
@@ -24,7 +24,7 @@ A marca deve transmitir:
 
 ## Como falamos
 
-A comunicação da Jobb Live deve ser:
+A comunicação da JobbLive deve ser:
 
 ### Direta
 Frases objetivas, sem excesso de explicação.
@@ -48,7 +48,7 @@ Menos palavras, mais impacto.
 
 # Personalidade da Marca
 
-A Jobb Live se comporta como:
+A JobbLive se comporta como:
 
 ## Um parceiro estratégico
 Ajuda agências a crescerem com clareza e controle.
@@ -175,7 +175,7 @@ A linguagem visual da marca deve seguir:
 
 # Sensação que a marca deve transmitir
 
-Quando alguém entra em contato com a Jobb Live, deve sentir:
+Quando alguém entra em contato com a JobbLive, deve sentir:
 
 - Organização
 - Controle
@@ -190,13 +190,13 @@ Quando alguém entra em contato com a Jobb Live, deve sentir:
 
 # Resumo Rápido
 
-## A Jobb Live não é:
+## A JobbLive não é:
 - Uma ferramenta genérica
 - Uma plataforma burocrática
 - Um software visualmente poluído
 - Uma marca exagerada
 
-## A Jobb Live é:
+## A JobbLive é:
 - Clara
 - Moderna
 - Estratégica

@@ -194,7 +194,7 @@ export default function PlanosCards() {
               </div>
 
               <p className="text-sm font-sans mb-6 text-white/80 leading-relaxed text-pretty">
-                Nossa equipe de especialistas está pronta para ajudar sua agência a estruturar processos, migrar dados e tornar o uso do Jobb Live altamente estratégico, acelerando os resultados e a produtividade do seu time.
+                Nossa equipe de especialistas está pronta para ajudar sua agência a estruturar processos, migrar dados e tornar o uso do JobbLive altamente estratégico, acelerando os resultados e a produtividade do seu time.
               </p>
 
               <div className="space-y-3 mb-8 pt-2 font-sans text-sm text-white/90">

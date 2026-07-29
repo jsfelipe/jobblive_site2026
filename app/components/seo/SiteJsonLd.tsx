@@ -49,7 +49,7 @@ export default function SiteJsonLd() {
         url: siteUrl,
         name: "JobbLive",
         description:
-          "Software de gestão para agências de marketing, live marketing, publicidade e eventos.",
+          "Software de gestão para agência de marketing, agência de live marketing e agência de eventos.",
         inLanguage: "pt-BR",
         publisher: {
           "@id": `${siteUrl}/#organization`,

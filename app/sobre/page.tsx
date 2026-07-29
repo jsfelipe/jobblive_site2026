@@ -7,7 +7,7 @@ import { getMetadataForPath } from "../lib/seo";
 export const metadata = getMetadataForPath("/sobre");
 
 export default function SobrePage() {
-  const brandName = process.env.NEXT_PUBLIC_PROJECT_NAME || "Jobb Live";
+  const brandName = process.env.NEXT_PUBLIC_PROJECT_NAME || "JobbLive";
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">

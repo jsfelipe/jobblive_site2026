@@ -36,7 +36,7 @@ export default function TesteGratisPage() {
                 <div className="w-[90px] h-auto self-start">
                   <Image
                     src="/assets/img/jobb-live-logotipo-dark.svg"
-                    alt="Jobb Live"
+                    alt="JobbLive"
                     width={92}
                     height={28}
                     className="w-full h-auto object-contain"

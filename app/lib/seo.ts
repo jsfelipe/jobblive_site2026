@@ -27,7 +27,7 @@ export function getMetadataForPath(pathname: string): Metadata {
   const description =
     pageSeo?.description ||
     homeSeo?.description ||
-    "Software de gestão para agências de marketing.";
+    "Software de gestão para agência de marketing, agência de live marketing e agência de eventos.";
   const imageUrl = absoluteUrl(DEFAULT_OG_IMAGE_PATH);
   const noindex = NOINDEX_PATHS.has(pathname);
 

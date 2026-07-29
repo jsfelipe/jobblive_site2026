@@ -126,7 +126,7 @@ export default function Modulos() {
           {/* Imagem de Fundo Nativa do Next.js */}
           <Image
             src="/assets/img/bg-modulos.png"
-            alt="Interface de gestão de projetos do Jobb Live"
+            alt="Interface de gestão de projetos do JobbLive"
             width={900}
             height={500}
             className="opacity-50 w-auto object-cover object-left"

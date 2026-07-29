@@ -19,12 +19,12 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
-    question: "Quais são os pré-requisitos para implantar o Jobb Live na minha agência?",
+    question: "Quais são os pré-requisitos para implantar o JobbLive na minha agência?",
     answerText:
-      "O Jobb Live é 100% online na nuvem, não necessitando de nenhuma instalação técnica. Você precisará apenas de acesso à internet banda larga e um computador ou dispositivo móvel com navegador web atualizado.",
+      "O JobbLive é 100% online na nuvem, não necessitando de nenhuma instalação técnica. Você precisará apenas de acesso à internet banda larga e um computador ou dispositivo móvel com navegador web atualizado.",
     answerJsx: (
       <span>
-        O Jobb Live é 100% online na nuvem, não necessitando de nenhuma instalação técnica.
+        O JobbLive é 100% online na nuvem, não necessitando de nenhuma instalação técnica.
         Você precisará apenas de acesso à internet banda larga e um computador ou dispositivo móvel com navegador web atualizado.
       </span>
     ),
@@ -64,7 +64,7 @@ const faqItems: FAQItem[] = [
     ),
   },
   {
-    question: "Como é a segurança das informações e backups no Jobb Live?",
+    question: "Como é a segurança das informações e backups no JobbLive?",
     answerText:
       "O sistema conta com criptografia de ponta a ponta através de certificação SSL de 256 bits (a mesma tecnologia utilizada por bancos). A infraestrutura é hospedada na AWS (Amazon Web Services) e realizamos backups diários automáticos.",
     answerJsx: (
@@ -77,10 +77,10 @@ const faqItems: FAQItem[] = [
   {
     question: "Como funciona o período de teste grátis por 7 dias?",
     answerText:
-      "Você pode experimentar todos os módulos do Jobb Live gratuitamente por 7 dias, sem compromisso e sem precisar cadastrar cartão de crédito. Basta criar sua conta e começar a organizar os projetos e o financeiro da sua agência imediatamente.",
+      "Você pode experimentar todos os módulos do JobbLive gratuitamente por 7 dias, sem compromisso e sem precisar cadastrar cartão de crédito. Basta criar sua conta e começar a organizar os projetos e o financeiro da sua agência imediatamente.",
     answerJsx: (
       <span>
-        Você pode experimentar todos os módulos do Jobb Live gratuitamente por 7 dias, sem compromisso e sem precisar cadastrar cartão de crédito.
+        Você pode experimentar todos os módulos do JobbLive gratuitamente por 7 dias, sem compromisso e sem precisar cadastrar cartão de crédito.
         Basta criar sua conta e começar a organizar os projetos e o financeiro da sua agência imediatamente.
       </span>
     ),

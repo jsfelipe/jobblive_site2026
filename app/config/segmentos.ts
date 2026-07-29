@@ -123,59 +123,6 @@ export const segmentosData: Record<string, SegmentoData> = {
     ctaTitle: "Elimine o caos financeiro do seu próximo evento",
     ctaSubtitle: "Tenha controle em tempo real de cada centavo investido na ativação. Teste a JobbLive grátis por 7 dias."
   },
-  "agencia-de-publicidade": {
-    slug: "agencia-de-publicidade",
-    name: "agências de publicidade",
-    published: false,
-    metaTitle: "JobbLive - Gestão para agências de publicidade e mídia",
-    metaDescription: "Centralize a mídia, fluxo de criação, faturamento e o controle de BV da sua agência de publicidade em um único sistema integrado.",
-    heroTitle: "Centralize a operação, mídia e o controle de BV da sua agência em uma única tela",
-    heroSubtitle: "Gerencie o fluxo de jobs desde o briefing até a veiculação, com controle total de BVs e rentabilidade de contas.",
-    painPoints: [
-      {
-        title: "Controle manual e ineficiente de BV",
-        description: "Acompanhar bonificações de veiculação (BVs) em planilhas gera erros de cobrança e perda de receita garantida por direito."
-      },
-      {
-        title: "Atrasos recorrentes na criação",
-        description: "Falta de visibilidade do gargalo de produção, gerando refações constantes e prazos estourados com clientes."
-      },
-      {
-        title: "Dificuldade em integrar mídia e financeiro",
-        description: "Processo truncado para faturar veiculações e repassar pagamentos a veículos de comunicação e produtores."
-      }
-    ],
-    benefits: [
-      {
-        title: "Faturamento de mídia sem erros",
-        description: "Integre as ordens de veiculação diretamente ao faturamento da agência, automatizando cobranças e repasses."
-      },
-      {
-        title: "Controle absoluto de receitas de BV",
-        description: "Monitore o status de cada BV a receber de veículos, garantindo o recebimento correto de todas as bonificações."
-      },
-      {
-        title: "Fluxo criativo sem gargalos",
-        description: "Gerencie o fluxo de tráfego de jobs (briefing, criação, revisão, aprovação interna e externa) de forma transparente."
-      }
-    ],
-    features: [
-      {
-        title: "Módulo de controle de BV",
-        description: "Rastreamento inteligente de contratos de bonificação por veículo, com alertas de prazos e valores a receber."
-      },
-      {
-        title: "Workflow de criação integrado",
-        description: "Gestão visual de jobs por equipe, com controle de status de aprovação de peças publicitárias."
-      },
-      {
-        title: "Faturamento automatizado",
-        description: "Emissão de notas fiscais de serviços e controle de repasses de mídia integrados ao fluxo de caixa."
-      }
-    ],
-    ctaTitle: "Sua agência de publicidade mais organizada e rentável",
-    ctaSubtitle: "Gerencie mídia, criação e BVs sem perder o controle. Comece seu teste gratuito hoje mesmo."
-  },
   "agencia-de-conteudo-digital": {
     slug: "agencia-de-conteudo-digital",
     name: "agência de conteúdo digital",
