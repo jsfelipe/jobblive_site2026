@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!data || data.published === false) {
     return {
-      title: "Segmento não encontrado | Jobb Live",
+      title: "Segmento não encontrado | JobbLive",
       robots: { index: false, follow: false },
     };
   }

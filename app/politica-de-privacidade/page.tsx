@@ -31,13 +31,13 @@ export default function PoliticaDePrivacidadePage() {
                 Proprietário e Controlador de Dados
               </h3>
               <p className="text-body-sm text-foreground/80 mb-1 leading-relaxed">
-                <strong className="font-semibold text-foreground">Empresa:</strong> Unity Brasil Tecnologia da Informação Ltda
+                <strong className="font-semibold text-foreground">Empresa:</strong> JOBBLIVE TECNOLOGIA LTDA
               </p>
               <p className="text-body-sm text-foreground/80 mb-1 leading-relaxed">
-                <strong className="font-semibold text-foreground">CNPJ:</strong> 06.013.344/0001-11
+                <strong className="font-semibold text-foreground">CNPJ:</strong> 65.251.197/0001-87
               </p>
               <p className="text-body-sm text-foreground/80 leading-relaxed">
-                <strong className="font-semibold text-foreground">Endereço:</strong> Rua Ribeiro de Brito, 901, sala 903, Recife/PE
+                <strong className="font-semibold text-foreground">Endereço:</strong> Av. Governador Agamenon Magalhães, 4575 – Sala 1401, Edifício Emp. Nassau, Caixa Postal 018, Paissandu, Recife/PE, CEP: 50070-255
               </p>
             </div>
 

@@ -38,7 +38,7 @@ export default function TermosDeUsoPage() {
                 <strong className="font-semibold text-foreground">Licenciado:</strong> Pessoa física ou jurídica (o <strong className="font-semibold text-foreground">“LICENCIADO”</strong>) que efetua o cadastro no sistema.
               </p>
               <p className="text-body-sm text-foreground/80 leading-relaxed">
-                <strong className="font-semibold text-foreground">Licenciante:</strong> Unity Brasil Tecnologia da Informação Ltda, inscrita no CNPJ sob nº 06.013.344/0001-11, com sede na Rua Capitão Zuzinha, 22 – sala 408, Boa Viagem, Recife/PE, CEP: 51030-420 - Brasil (a <strong className="font-semibold text-foreground">“LICENCIANTE”</strong>).
+                <strong className="font-semibold text-foreground">Licenciante:</strong> JOBBLIVE TECNOLOGIA LTDA, inscrita no CNPJ sob nº 65.251.197/0001-87, com sede na Av. Governador Agamenon Magalhães, 4575 – Sala 1401, Edifício Emp. Nassau, Caixa Postal 018, Paissandu, Recife/PE, CEP: 50070-255 (a <strong className="font-semibold text-foreground">“LICENCIANTE”</strong>).
               </p>
             </div>
 

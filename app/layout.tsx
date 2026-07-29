@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   alternates: baseMetadata.alternates,
   openGraph: {
     ...baseMetadata.openGraph,
-    siteName: "Jobb Live",
+    siteName: "JobbLive",
   },
   twitter: baseMetadata.twitter,
   ...(gscVerificationId

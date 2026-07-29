@@ -22,7 +22,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-marketing": {
     slug: "agencia-de-marketing",
     name: "Agência de marketing",
-    metaTitle: "Software de Gestão para agências de marketing | Jobb Live",
+    metaTitle: "JobbLive - Software de Gestão para agências de marketing",
     metaDescription: "O software de gestão para agências de marketing. Controle timesheet, escopo de projetos, contratos recorrentes e garanta a rentabilidade da sua operação.",
     heroTitle: "O software de gestão para agências de marketing escalarem com lucro",
     heroSubtitle: "Gerencie projetos, timesheet, financeiro e a rentabilidade de seus contratos em um único sistema, livre de planilhas complexas e retrabalho.",
@@ -74,7 +74,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-live-marketing": {
     slug: "agencia-de-live-marketing",
     name: "Agência de live marketing",
-    metaTitle: "Software para agências de live marketing | Jobb Live",
+    metaTitle: "JobbLive - Software para agências de live marketing",
     metaDescription: "Gerencie ativações, eventos e campanhas de live marketing. Controle orçamentos complexos, contratação de promotores e custos de campo em tempo real.",
     heroTitle: "Controle sua operação de live marketing de ponta a ponta, do orçamento ao campo",
     heroSubtitle: "Centralize a gestão de fornecedores, controle de diárias, compras de materiais e orçamentos de eventos sem planilhas caóticas.",
@@ -127,7 +127,7 @@ export const segmentosData: Record<string, SegmentoData> = {
     slug: "agencia-de-publicidade",
     name: "agências de publicidade",
     published: false,
-    metaTitle: "Gestão para agências de publicidade e mídia | Jobb Live",
+    metaTitle: "JobbLive - Gestão para agências de publicidade e mídia",
     metaDescription: "Centralize a mídia, fluxo de criação, faturamento e o controle de BV da sua agência de publicidade em um único sistema integrado.",
     heroTitle: "Centralize a operação, mídia e o controle de BV da sua agência em uma única tela",
     heroSubtitle: "Gerencie o fluxo de jobs desde o briefing até a veiculação, com controle total de BVs e rentabilidade de contas.",
@@ -179,7 +179,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-conteudo-digital": {
     slug: "agencia-de-conteudo-digital",
     name: "agência de conteúdo digital",
-    metaTitle: "Software de Gestão para agências de conteúdo digital | Jobb Live",
+    metaTitle: "JobbLive - Software de Gestão para agências de conteúdo digital",
     metaDescription: "Gerencie alto volume de entregas de conteúdo, redes sociais e SEO. Otimize a capacidade do time e meça a lucratividade de cada cliente.",
     heroTitle: "Gerencie o fluxo de criação e a lucratividade da sua agência de conteúdo digital",
     heroSubtitle: "Organize alto volume de posts, copys e designs em um fluxo de trabalho ágil, sabendo exatamente o custo de cada conta.",
@@ -231,7 +231,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "agencia-de-ativacao-de-marca": {
     slug: "agencia-de-ativacao-de-marca",
     name: "agências de ativações de marca",
-    metaTitle: "Software de Gestão para Ativações de Marca | Jobb Live",
+    metaTitle: "JobbLive - Software de Gestão para Ativações de Marca",
     metaDescription: "Organize a logística, contratação de promotores e prestação de contas de ativações de marca. Controle despesas de campo com facilidade.",
     heroTitle: "Simplifique a logística, a gestão de promotores e o custo de suas ativações",
     heroSubtitle: "Monitore despesas de campo, contratação de staff, logística de materiais promocionais e controle financeiro por projeto.",
@@ -284,7 +284,7 @@ export const segmentosData: Record<string, SegmentoData> = {
     slug: "agencia-de-trade-marketing",
     name: "Agências de Trade Marketing",
     published: false,
-    metaTitle: "Gestão para Agências de Trade Marketing | Jobb Live",
+    metaTitle: "JobbLive - Gestão para Agências de Trade Marketing",
     metaDescription: "Otimize a gestão de campanhas de trade, positivação de PDV, promotores e faturamento de contratos corporativos de grande escala.",
     heroTitle: "Gerencie suas campanhas de trade e a operação de PDV com controle financeiro absoluto",
     heroSubtitle: "Controle contratos de grande porte, logística de positivação de PDV e a rentabilidade da sua operação de trade marketing.",
@@ -336,7 +336,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "organizador-de-feiras-e-congressos": {
     slug: "organizador-de-feiras-e-congressos",
     name: "Organizadores de feiras e congressos",
-    metaTitle: "Gestão para feiras, congressos e eventos corporativos | Jobb Live",
+    metaTitle: "JobbLive - Gestão para feiras, congressos e eventos corporativos",
     metaDescription: "Software de gestão para grandes eventos corporativos. Controle a venda de estandes, patrocínios, orçamentos milionários e montagem.",
     heroTitle: "Gerencie o orçamento e a operação de suas feiras e congressos em um único lugar",
     heroSubtitle: "Controle orçamentos complexos de infraestrutura, venda de cotas de patrocínio, contratos de estandes e fluxo de caixa de grandes eventos.",
@@ -388,7 +388,7 @@ export const segmentosData: Record<string, SegmentoData> = {
   "organizador-de-festivais-e-shows": {
     slug: "organizador-de-festivais-e-shows",
     name: "uma empresa organizadora de festivais e shows",
-    metaTitle: "Software de Gestão para Festivais e Shows | Jobb Live",
+    metaTitle: "JobbLive - Software de Gestão para Festivais e Shows",
     metaDescription: "Gerencie a produção de shows e festivais. Controle fluxo de caixa de alto risco, adiantamento de cachês e conciliação de ticketeiras.",
     heroTitle: "Controle o fluxo de caixa, venda de ingressos e custos de produção do seu festival",
     heroSubtitle: "Monitore adiantamentos de cachês, pagamentos de fornecedores de palco, som e luz, e integre o recebimento de ticketeiras.",

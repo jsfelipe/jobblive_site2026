@@ -23,7 +23,7 @@ export function getMetadataForPath(pathname: string): Metadata {
   const pageSeo = typedSeoData[pathname] || homeSeo;
   const siteUrl = getSiteUrl();
   const canonicalUrl = `${siteUrl}${pathname === "/" ? "" : pathname}`;
-  const title = pageSeo?.title || homeSeo?.title || "Jobb Live";
+  const title = pageSeo?.title || homeSeo?.title || "JobbLive";
   const description =
     pageSeo?.description ||
     homeSeo?.description ||

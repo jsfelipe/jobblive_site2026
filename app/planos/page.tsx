@@ -112,8 +112,8 @@ const faqItems: FAQItem[] = [
 export default function PlanosPage() {
   const jsonLdData = {
     "@type": "FAQPage",
-    name: "Planos e preços | Jobb Live",
-    description: "Conheça os planos e preços das soluções em sistema de gestão Jobb Live.",
+    name: "JobbLive - Planos e preços",
+    description: "Conheça os planos e preços das soluções em sistema de gestão JobbLive.",
     mainEntity: faqItems.map((item) => ({
       "@type": "Question",
       name: item.question,

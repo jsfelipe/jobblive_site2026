@@ -1,6 +1,6 @@
 {
   "/": {
-    "title": "Home - Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Software de gestão para agências de marketing.",
     "description": "Software de gestão para agências de marketing. Gerencie projetos, financeiro e operação em um único sistema, sem planilhas, sem retrabalho.",
     "keywords": [
       "software de gestão para agências",
@@ -21,7 +21,7 @@
     ]
   },
   "/duvidas": {
-    "title": "Dúvidas Frequentes | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Dúvidas Frequentes",
     "description": "Encontre respostas para as principais dúvidas sobre o Jobb Live: funcionalidades, emissão de nota fiscal, segurança de dados, suporte e mais.",
     "keywords": [
       "dúvidas jobb live",
@@ -32,7 +32,7 @@
     ]
   },
   "/funcionalidades": {
-    "title": "Funcionalidades | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Funcionalidades",
     "description": "Conheça campanhas, orçamentos, tarefas e financeiro integrado do Jobb Live — do briefing ao pagamento do fornecedor, em um só sistema para agências.",
     "keywords": [
       "funcionalidades jobb live",
@@ -43,7 +43,7 @@
     ]
   },
   "/planos": {
-    "title": "Planos e preços | Jobb Live - Software de gestão para agências",
+    "title": "JobbLive - Planos e preços",
     "description": "Conheça os planos e preços do Jobb Live. Gestão de projetos, tarefas e financeiro para agências. Teste grátis por 7 dias.",
     "keywords": [
       "planos jobb live",
@@ -54,7 +54,7 @@
     ]
   },
   "/politica-de-privacidade": {
-    "title": "Política de Privacidade | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Política de Privacidade",
     "description": "Leia a Política de Privacidade do Jobb Live. Saiba como coletamos, usamos, armazenamos e protegemos seus dados pessoais de acordo com a LGPD.",
     "keywords": [
       "política de privacidade",
@@ -65,7 +65,7 @@
     ]
   },
   "/sobre": {
-    "title": "Sobre | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Sobre",
     "description": "Conheça a Jobb Live, plataforma de gestão criada para dar mais clareza, controle e performance a agências e produtoras.",
     "keywords": [
       "sobre jobb live",
@@ -74,7 +74,7 @@
     ]
   },
   "/termos-de-uso": {
-    "title": "Termos de Uso | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Termos de Uso",
     "description": "Leia os Termos de Uso do Jobb Live. Entenda os termos e condições para licenciamento e uso do nosso software de gestão de agências.",
     "keywords": [
       "termos de uso",
@@ -84,7 +84,7 @@
     ]
   },
   "/teste-gratis": {
-    "title": "Teste Grátis | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Teste Grátis",
     "description": "Experimente o Jobb Live grátis por 7 dias. O software completo de gestão para agências de marketing, live marketing, publicidade e eventos.",
     "keywords": [
       "teste grátis",
@@ -94,12 +94,12 @@
     ]
   },
   "/teste-gratis/sucesso": {
-    "title": "Solicitação Enviada | Jobb Live - Software de gestão para agências de marketing.",
+    "title": "JobbLive - Solicitação Enviada",
     "description": "Seus dados foram recebidos com sucesso. Em breve você receberá as instruções para o seu período de testes por e-mail.",
     "keywords": []
   },
   "/links": {
-    "title": "Links Oficiais | Jobb Live",
+    "title": "JobbLive - Links Oficiais",
     "description": "Acesse os canais oficiais da Jobb Live, fale pelo WhatsApp, envie e-mail ou visite o site principal.",
     "keywords": [
       "links jobb live",

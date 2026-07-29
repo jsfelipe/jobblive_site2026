@@ -24,7 +24,7 @@ export default function SiteJsonLd() {
       {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
-        name: "Jobb Live",
+        name: "JobbLive",
         url: siteUrl,
         email,
         logo: {
@@ -47,7 +47,7 @@ export default function SiteJsonLd() {
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: siteUrl,
-        name: "Jobb Live",
+        name: "JobbLive",
         description:
           "Software de gestão para agências de marketing, live marketing, publicidade e eventos.",
         inLanguage: "pt-BR",
@@ -58,7 +58,7 @@ export default function SiteJsonLd() {
       {
         "@type": "SoftwareApplication",
         "@id": `${siteUrl}/#software`,
-        name: "Jobb Live",
+        name: "JobbLive",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
         url: siteUrl,
