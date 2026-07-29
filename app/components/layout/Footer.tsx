@@ -17,8 +17,8 @@ const navLinks = [
   { name: "Funcionalidades", href: "/funcionalidades", external: false },
   { name: "Planos", href: "/planos", external: false },
   { name: "Dúvidas", href: "/duvidas", external: false },
-  { name: "Ajuda", href: contactsData.whatsappLink || "https://wa.me/5581998504107", external: true },
-  { name: "Blog", href: "https://blog.jobblive.com.br/", external: true },
+  { name: "Ajuda", href: contactsData.whatsappLink || "https://wa.me/5581998504107?text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20o%20JobbLive!", external: true },
+  // { name: "Blog", href: "https://blog.jobblive.com.br/", external: true },
   { name: "Termos de uso", href: "/termos-de-uso", external: false },
   { name: "Política de Privacidade", href: "/politica-de-privacidade", external: false },
 ];

@@ -8,7 +8,7 @@ import { getMetadataForPath } from "../../lib/seo";
 export const metadata = getMetadataForPath("/teste-gratis/sucesso");
 
 export default function TesteSucessoPage() {
-  const whatsappLink = contactsData.whatsappLink || "https://wa.me/5581998504107";
+  const whatsappLink = contactsData.whatsappLink || "https://wa.me/5581998504107?text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20o%20JobbLive!";
   const supportEmail = contactsData.email || "contato@jobblive.com.br";
   const logoSrc = themeData.logoLight || "/assets/img/jobb-live-logotipo-light.svg";
 

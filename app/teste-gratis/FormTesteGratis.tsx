@@ -50,6 +50,7 @@ export default function FormTesteGratis() {
     uf_nfe: "SP", // Estado (padrão São Paulo como UX melhor que AC)
     codigo_promocao: initialPromoCode, // Código Promocional padrão
     qtde_usuarios: 1, // Padrão 1
+    tipo_jobb: "JOBBLIVE",
   });
 
   // const [interesses, setInteresses] = useState<string[]>([]);
