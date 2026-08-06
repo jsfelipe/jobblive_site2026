@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: "Planos", href: "/planos", external: false },
     { name: "Dúvidas", href: "/duvidas", external: false },
     // { name: "Blog", href: "/blog", external: false },
-    { name: "Ajuda", href: contactsData.whatsappLink || "https://wa.me/5581998504107?text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20o%20JobbLive!", external: true },
+    { name: "Ajuda", href: contactsData.whatsappLink || "https://wa.me/558194384020?text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20o%20JobbLive!", external: true },
   ];
 
 
