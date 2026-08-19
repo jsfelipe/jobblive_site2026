@@ -137,7 +137,7 @@ export default function PlanosCards() {
               <div className="mb-6 flex items-baseline gap-1">
                 <span className="text-sm font-sans text-white/80">R$</span>
                 <span className="text-5xl font-display font-semibold tracking-tight text-white">
-                  {isAnual ? "79,90" : "99,00"}
+                  {isAnual ? "89,90" : "99,00"}
                 </span>
                 <span className="text-sm font-sans text-white/80">/ usuário / mês*</span>
               </div>
