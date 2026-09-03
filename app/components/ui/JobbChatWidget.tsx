@@ -5,7 +5,7 @@ import { ChatCircle } from '@phosphor-icons/react';
 
 const GUEST_ID_KEY = 'jobblive_chat_guest_id';
 const PORTAL_TOKEN_KEY = 'jobblive_chat_portal_token';
-const WIDGET_ASSET_V = '20260903-visitor-name';
+const WIDGET_ASSET_V = '20260903-site-welcome';
 const SITE_ORIGEM = 'jobblive';
 
 function normalizeApiBase(url: string): string {
