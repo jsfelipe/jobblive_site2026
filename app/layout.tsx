@@ -5,7 +5,7 @@ import { getMetadataForPath } from "./lib/seo";
 import { getSiteUrl } from "./lib/site";
 import themeData from "./config/theme.json";
 import SmoothScroll from "./components/ui/SmoothScroll";
-import WhatsAppButton from "./components/ui/WhatsAppButton";
+import JobbChatWidget from "./components/ui/JobbChatWidget";
 import ScrollAnimateInitializer from "./components/ui/ScrollAnimateInitializer";
 import SiteJsonLd from "./components/seo/SiteJsonLd";
 import "./globals.css";
@@ -97,7 +97,7 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
-        <WhatsAppButton />
+        <JobbChatWidget />
       </body>
     </html>
   );
