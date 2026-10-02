@@ -888,3 +888,81 @@ html {
 
 
 
+
+
+/* -------------------------------------------------------------
+   Tokens e Utilitários da Página de IA
+   ------------------------------------------------------------- */
+@theme {
+  --color-jobb-orange: #FD183F;
+  --color-jobb-orange-hover: #D71436;
+  --color-jobb-dark: #232323;
+  --color-jobb-gray: #202024;
+  --color-jobb-gray-hover: #29292E;
+  --color-jobb-text: #E1E1E6;
+  --color-jobb-text-secondary: #A8A8B3;
+  --color-card: #2c2c2c;
+  --color-jobb-bg-secondary: #171717;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.section-padding {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.card {
+  background-color: var(--color-card, #2c2c2c);
+  border-radius: 1.4rem;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #FD183F, #FD4665, #D71436, #FD183F);
+  background-size: 200% auto;
+  transition: background-position 0.4s ease-in-out;
+}
+
+.gradient:hover {
+  background-position: right center;
+}
+
+.bg-secondary {
+  background-color: #171717;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-infinite {
+  animation: marquee 40s linear infinite;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
