@@ -22,42 +22,42 @@ interface OrbitIconConfig {
 const ORBIT_WORDS: OrbitWordConfig[] = [
   {
     text: 'memória',
-    className: 'font-serif italic text-foreground/45 text-[15px] sm:text-[18px]',
+    className: 'font-serif italic text-foreground/20 text-[15px] sm:text-[18px]',
     initialAngleDeg: -110,
   },
   {
     text: 'prompt',
-    className: 'font-sans font-normal text-foreground/50 text-[18px] sm:text-[23px] tracking-wide',
+    className: 'font-sans font-normal text-foreground/25 text-[18px] sm:text-[23px] tracking-wide',
     initialAngleDeg: -155,
   },
   {
     text: 'Inteligência Artificial',
-    className: 'font-sans text-foreground/40 text-[12px] sm:text-[14px] tracking-normal',
+    className: 'font-sans text-foreground/20 text-[12px] sm:text-[14px] tracking-normal',
     initialAngleDeg: -200,
   },
   {
     text: 'Financeiro',
-    className: 'font-serif italic text-foreground/50 text-[18px] sm:text-[23px]',
+    className: 'font-serif italic text-foreground/25 text-[18px] sm:text-[23px]',
     initialAngleDeg: -245,
   },
   {
     text: 'API',
-    className: 'font-sans font-medium text-foreground/45 text-[16px] sm:text-[20px] tracking-wider',
+    className: 'font-sans font-medium text-foreground/20 text-[16px] sm:text-[20px] tracking-wider',
     initialAngleDeg: -285,
   },
   {
     text: 'contexto',
-    className: 'font-serif italic text-foreground/40 text-[15px] sm:text-[18px]',
+    className: 'font-serif italic text-foreground/20 text-[15px] sm:text-[18px]',
     initialAngleDeg: -325,
   },
   {
     text: 'mcp',
-    className: 'font-mono text-foreground/40 text-[14px] sm:text-[16px] tracking-widest',
+    className: 'font-mono text-foreground/20 text-[14px] sm:text-[16px] tracking-widest',
     initialAngleDeg: -370,
   },
   {
     text: 'Comercial',
-    className: 'font-serif italic text-foreground/45 text-[16px] sm:text-[20px]',
+    className: 'font-serif italic text-foreground/20 text-[16px] sm:text-[20px]',
     initialAngleDeg: -415,
   },
 ];
@@ -192,7 +192,7 @@ function OrbitingIcon({
       }}
     >
       <div
-        className="-translate-x-1/2 -translate-y-1/2 drop-shadow-[0_16px_36px_rgba(0,0,0,0.75)]"
+        className="-translate-x-1/2 -translate-y-1/2"
         style={{
           width: `${currentWidth}px`,
           height: `${currentHeight}px`,
@@ -265,26 +265,15 @@ export function IAHero() {
             A inteligência artificial entra no JobbLive para acelerar o que mais consome tempo no dia a dia: conferir extrato, montar proposta e trazer planilha de orçamento para dentro do sistema.
           </p>
 
-          {/* Contact / CTA Button no padrão do site */}
+          {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center lg:justify-start">
             <Link
-              href="/teste-gratis"
+              href="#como-funciona"
               className="btn-primary btn-lg w-full sm:w-auto px-8 text-center flex items-center justify-center"
             >
-              Teste e conheça o JobbLive
+              Veja como funciona
             </Link>
-            <a
-              href="https://wa.me/5581998504107?text=Ol%C3%A1!%20quero%20saber%20mais%20sobre%20o%20JobbLive!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-lg w-full sm:w-auto px-8 bg-white text-foreground hover:bg-secondary-50 text-center flex items-center justify-center border border-foreground/10"
-            >
-              Agendar demo
-            </a>
           </div>
-          <p className="text-xs text-foreground/50 mt-3 text-center lg:text-left select-none">
-            Sem cartão de crédito &nbsp;|&nbsp; Teste por 7 dias grátis
-          </p>
         </motion.div>
       </div>
 
@@ -312,7 +301,7 @@ export function IAHero() {
             alt="Interface de IA Jobb"
             width={1208}
             height={242}
-            className="w-full h-auto object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.85)]"
+            className="w-full h-auto object-contain"
           />
         </div>
 
