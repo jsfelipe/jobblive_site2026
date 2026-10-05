@@ -119,7 +119,19 @@ export function IAImportacaoWorkflow({ progress }: IAImportacaoWorkflowProps) {
             style={{ opacity: linesTopOpacity }}
           />
 
-          <circle cx="230" cy="20" r="3" fill="transparent" stroke="rgba(0, 0, 0, 0.35)" strokeWidth="1.2" />
+          <motion.circle
+            cx="230"
+            cy="20"
+            r="3"
+            fill="transparent"
+            stroke="rgba(0, 0, 0, 0.35)"
+            strokeWidth="1.2"
+            style={isScrollDriven ? { opacity: linesTopOpacity } : undefined}
+            initial={!isScrollDriven ? { opacity: 0 } : undefined}
+            whileInView={!isScrollDriven ? { opacity: 1 } : undefined}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.35 }}
+          />
         </svg>
 
         {/* Badges Flutuantes nos ramos */}
@@ -238,9 +250,45 @@ export function IAImportacaoWorkflow({ progress }: IAImportacaoWorkflowProps) {
             transition={{ duration: 0.6, delay: 0.65 }}
           />
 
-          <circle cx="125" cy="0" r="2.5" fill="transparent" stroke="rgba(0, 0, 0, 0.25)" strokeWidth="1" />
-          <circle cx="335" cy="0" r="2.5" fill="transparent" stroke="rgba(0, 0, 0, 0.25)" strokeWidth="1" />
-          <circle cx="230" cy="48" r="3" fill="transparent" stroke="rgba(0, 0, 0, 0.35)" strokeWidth="1.2" />
+          <motion.circle
+            cx="125"
+            cy="0"
+            r="2.5"
+            fill="transparent"
+            stroke="rgba(0, 0, 0, 0.25)"
+            strokeWidth="1"
+            style={isScrollDriven ? { opacity: linesBottomOpacity } : undefined}
+            initial={!isScrollDriven ? { opacity: 0 } : undefined}
+            whileInView={!isScrollDriven ? { opacity: 1 } : undefined}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.65 }}
+          />
+          <motion.circle
+            cx="335"
+            cy="0"
+            r="2.5"
+            fill="transparent"
+            stroke="rgba(0, 0, 0, 0.25)"
+            strokeWidth="1"
+            style={isScrollDriven ? { opacity: linesBottomOpacity } : undefined}
+            initial={!isScrollDriven ? { opacity: 0 } : undefined}
+            whileInView={!isScrollDriven ? { opacity: 1 } : undefined}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.65 }}
+          />
+          <motion.circle
+            cx="230"
+            cy="48"
+            r="3"
+            fill="transparent"
+            stroke="rgba(0, 0, 0, 0.35)"
+            strokeWidth="1.2"
+            style={isScrollDriven ? { opacity: linesBottomOpacity } : undefined}
+            initial={!isScrollDriven ? { opacity: 0 } : undefined}
+            whileInView={!isScrollDriven ? { opacity: 1 } : undefined}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.7 }}
+          />
         </svg>
 
         {/* Badge Central de Validação (no tom de laranja da marca) */}

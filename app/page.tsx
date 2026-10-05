@@ -5,6 +5,7 @@ import Problemas from "./components/sections/Problemas";
 import Solucao from "./components/sections/Solucao";
 import GestaoAgil from "./components/sections/GestaoAgil";
 import FinanceiroCompleto from "./components/sections/FinanceiroCompleto";
+import IAChamada from "./components/sections/IAChamada";
 import Modulos from "./components/sections/Modulos";
 import Indicado from "./components/sections/Indicado";
 // import Depoimentos from "./components/sections/Depoimentos";
@@ -34,6 +35,9 @@ export default function Home() {
 
         {/* Seção Financeiro Completo */}
         <FinanceiroCompleto />
+
+        {/* Seção Nova de IA do JobbLive */}
+        <IAChamada />
         
         {/* Seção Módulos */}
         <Modulos />

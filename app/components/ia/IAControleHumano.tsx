@@ -34,7 +34,7 @@ const STEPS: StepCard[] = [
 
 export function IAControleHumano() {
   return (
-    <section className="section-padding bg-background border-t border-foreground/5">
+    <section id="como-funciona" className="section-padding bg-background border-t border-foreground/5 scroll-mt-20">
       <div className="container-custom max-w-6xl mx-auto">
         {/* Cabeçalho no padrão JobbLive */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
